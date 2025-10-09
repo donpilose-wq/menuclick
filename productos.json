@@ -1,0 +1,240 @@
+[
+  {
+    "nombre": "Ravioles",
+    "descripcion": "Pasta casera con salsa a elección",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1600697395543-ef62b8e7daeb",
+    "categoria": "Pastas 🍝"
+  },
+  {
+    "nombre": "Canelones",
+    "descripcion": "Canelones rellenos con carne o verdura",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1601924638867-3ec1cf2b8b88",
+    "categoria": "Pastas 🍝"
+  },
+  {
+    "nombre": "Tallarines",
+    "descripcion": "Pasta casera con salsa a elección",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1617196038644-486ff788deaf",
+    "categoria": "Pastas 🍝"
+  },
+  {
+    "nombre": "Pastel de papas",
+    "descripcion": "Clásico pastel de carne con puré gratinado",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Pollo con guarnición",
+    "descripcion": "Pechuga de pollo a la plancha con acompañamiento a elección",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1606755962773-0d2f8667f89e",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Asado con guarnición",
+    "descripcion": "Corte clásico a la parrilla con acompañamiento",
+    "precio": "14000",
+    "imagen": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092",
+    "categoria": "Parrilla 🔥"
+  },
+  {
+    "nombre": "Vacío con guarnición",
+    "descripcion": "Vacío al horno o parrilla con guarnición",
+    "precio": "14000",
+    "imagen": "https://images.unsplash.com/photo-1617196038608-3b0c5b9a5d7d",
+    "categoria": "Parrilla 🔥"
+  },
+  {
+    "nombre": "Bondiola con guarnición",
+    "descripcion": "Bondiola tierna al horno con acompañamiento",
+    "precio": "14000",
+    "imagen": "https://images.unsplash.com/photo-1625938144587-1b4d355a1a49",
+    "categoria": "Parrilla 🔥"
+  },
+  {
+    "nombre": "Matambre con guarnición",
+    "descripcion": "Matambre tierno con guarnición",
+    "precio": "14000",
+    "imagen": "https://images.unsplash.com/photo-1608032079925-471c6c5a13b1",
+    "categoria": "Parrilla 🔥"
+  },
+  {
+    "nombre": "Milanesa con guarnición",
+    "descripcion": "De carne o pollo con acompañamiento a elección",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1604335399108-c49e9e0b6ac3",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Suprema con guarnición",
+    "descripcion": "Suprema de pollo con acompañamiento",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1603133872878-684f22b7cc9d",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Milanesa napolitana con guarnición",
+    "descripcion": "Milanesa con salsa, jamón y queso",
+    "precio": "14000",
+    "imagen": "https://images.unsplash.com/photo-1599021613963-47dc81a37b56",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Suprema napolitana con guarnición",
+    "descripcion": "Suprema con salsa, jamón y queso",
+    "precio": "14000",
+    "imagen": "https://images.unsplash.com/photo-1611068791963-3b29a7d4d091",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Filet con guarnición",
+    "descripcion": "Filet de merluza con acompañamiento",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1603048291784-0b8ff5e1e8e8",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Escalope con guarnición",
+    "descripcion": "Escalope de carne al horno con acompañamiento",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1613145993481-1dfde9bcdc9b",
+    "categoria": "Platos principales 🍽️"
+  },
+  {
+    "nombre": "Tarta de jamón y queso",
+    "descripcion": "Porción de tarta casera",
+    "precio": "7500",
+    "imagen": "https://images.unsplash.com/photo-1604335381459-3a3c0f7d9ad3",
+    "categoria": "Tartas 🥧"
+  },
+  {
+    "nombre": "Tarta de pollo",
+    "descripcion": "Porción de tarta de pollo casera",
+    "precio": "7500",
+    "imagen": "https://images.unsplash.com/photo-1625940600662-22d23f70e3e1",
+    "categoria": "Tartas 🥧"
+  },
+  {
+    "nombre": "Torta de acelga",
+    "descripcion": "Porción de tarta de acelga casera",
+    "precio": "7500",
+    "imagen": "https://images.unsplash.com/photo-1601313982934-009edb21e1cc",
+    "categoria": "Tartas 🥧"
+  },
+  {
+    "nombre": "Tarta de zapallito",
+    "descripcion": "Porción de tarta de zapallito casera",
+    "precio": "7500",
+    "imagen": "https://images.unsplash.com/photo-1607290817800-6c8319a33a8e",
+    "categoria": "Tartas 🥧"
+  },
+  {
+    "nombre": "Tortilla de papa",
+    "descripcion": "Tortilla clásica de papa",
+    "precio": "8000",
+    "imagen": "https://images.unsplash.com/photo-1585416668193-3e26b3e44b51",
+    "categoria": "Tortillas 🍳"
+  },
+  {
+    "nombre": "Tortilla de acelga",
+    "descripcion": "Tortilla verde de acelga",
+    "precio": "8000",
+    "imagen": "https://images.unsplash.com/photo-1613145993574-4e43a0b75639",
+    "categoria": "Tortillas 🍳"
+  },
+  {
+    "nombre": "Budín de pan",
+    "descripcion": "Postre casero",
+    "precio": "6000",
+    "imagen": "https://images.unsplash.com/photo-1616486886789-99a7b400dcb9",
+    "categoria": "Postres 🍮"
+  },
+  {
+    "nombre": "Flan",
+    "descripcion": "Flan casero con dulce o crema",
+    "precio": "6000",
+    "imagen": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+    "categoria": "Postres 🍮"
+  },
+  {
+    "nombre": "Bastones de muzzarella",
+    "descripcion": "Porción de bastones fritos",
+    "precio": "6000",
+    "imagen": "https://images.unsplash.com/photo-1606755962773-0d2f8667f89e",
+    "categoria": "Minutas 🍽️"
+  },
+  {
+    "nombre": "Papas al horno",
+    "descripcion": "Guarnición",
+    "precio": "5000",
+    "imagen": "https://images.unsplash.com/photo-1617196038608-3b0c5b9a5d7d",
+    "categoria": "Guarniciones 🥗"
+  },
+  {
+    "nombre": "Puré de papas",
+    "descripcion": "Guarnición clásica",
+    "precio": "5000",
+    "imagen": "https://images.unsplash.com/photo-1601313982934-009edb21e1cc",
+    "categoria": "Guarniciones 🥗"
+  },
+  {
+    "nombre": "Puré de calabaza",
+    "descripcion": "Guarnición de calabaza",
+    "precio": "5000",
+    "imagen": "https://images.unsplash.com/photo-1625940600662-22d23f70e3e1",
+    "categoria": "Guarniciones 🥗"
+  },
+  {
+    "nombre": "Ensalada rusa",
+    "descripcion": "Papa, zanahoria, arvejas y mayonesa",
+    "precio": "5000",
+    "imagen": "https://images.unsplash.com/photo-1625940626060-91e216664a52",
+    "categoria": "Guarniciones 🥗"
+  },
+  {
+    "nombre": "Empanada de carne / pollo / jamón y queso",
+    "descripcion": "Por unidad",
+    "precio": "2500",
+    "imagen": "https://images.unsplash.com/photo-1625940600803-29a4475b40c2",
+    "categoria": "Empanadas 🥟"
+  },
+  {
+    "nombre": "Lengua a la vinagreta",
+    "descripcion": "Porción fría",
+    "precio": "32000",
+    "imagen": "https://images.unsplash.com/photo-1613145993481-1dfde9bcdc9b",
+    "categoria": "Fríos 🍢"
+  },
+  {
+    "nombre": "Morrones a la vinagreta",
+    "descripcion": "Porción fría",
+    "precio": "30000",
+    "imagen": "https://images.unsplash.com/photo-1603048291784-0b8ff5e1e8e8",
+    "categoria": "Fríos 🍢"
+  },
+  {
+    "nombre": "Berenjenas a la vinagreta",
+    "descripcion": "Porción fría",
+    "precio": "30000",
+    "imagen": "https://images.unsplash.com/photo-1613145993574-4e43a0b75639",
+    "categoria": "Fríos 🍢"
+  },
+  {
+    "nombre": "Plato del día",
+    "descripcion": "Consulta el menú semanal (Pastel, Lentejas, Arroz con pollo, Albóndigas, Mondongo, Pastas)",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1608032079925-471c6c5a13b1",
+    "categoria": "Platos del día 🍲"
+  },
+  {
+    "nombre": "Sándwich completo (vacío, milanesa, matambre, bondiola, pollo)",
+    "descripcion": "Con lechuga, tomate, huevo, cebolla y mayonesa",
+    "precio": "13000",
+    "imagen": "https://images.unsplash.com/photo-1606755962773-0d2f8667f89e",
+    "categoria": "Sándwiches 🥪"
+  }
+]
