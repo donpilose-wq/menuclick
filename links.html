@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don Pilo - La Pastisería</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      background-image: url('img/fondo-donpilo.jpg'); /* 🌄 Fondo personalizable */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slideshow {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
+    }
+
+    .slideshow img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+      animation: fade 9s infinite;
+    }
+
+    .slideshow img:nth-child(1){animation-delay:0s;}
+    .slideshow img:nth-child(2){animation-delay:3s;}
+    .slideshow img:nth-child(3){animation-delay:6s;}
+
+    @keyframes fade {
+      0%{opacity:0;}
+      10%{opacity:1;}
+      30%{opacity:1;}
+      40%{opacity:0;}
+      100%{opacity:0;}
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+      margin: 5px 0;
+    }
+
+    p {
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 35px;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+      border-bottom: 2px solid #d8b384;
+      padding-bottom: 5px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 5px 15px;
+      border-radius: 5px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+      background: white;
+    }
+
+    .link-card img {
+      width: 28px;
+      height: 28px;
+      margin-right: 12px;
+    }
+
+    /* 💡 Botón principal */
+    .main-button {
+      display: inline-block;
+      margin: 15px auto 25px;
+      padding: 14px 28px;
+      background-color: #d8b384;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s, background 0.3s;
+    }
+    .main-button:hover {
+      background-color: #caa36e;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="slideshow">
+      <img src="img/donpilo1.jpg" alt="Don Pilo 1">
+      <img src="img/donpilo2.jpg" alt="Don Pilo 2">
+      <img src="img/donpilo3.jpg" alt="Don Pilo 3">
+    </div>
+    <h1>Don Pilo - La Pastisería</h1>
+    <p>Comé rico, comé con amor 💛</p>
+    <a class="main-button" href="https://donpilose-wq.github.io/menuclick/" target="_blank">🍰 Ver Menú Ahora</a>
+  </header>
+
+  <!-- 🏠 Sucursal Principal -->
+  <h2>🍪 Don Pilo Aguero 2274</h2>
+  <div class="links">
+    <a class="link-card" href="https://donpilose-wq.github.io/menuclick/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Carta">
+      Carta Digital
+    </a>
+    <a class="link-card" href="https://maps.app.goo.gl/FjhJLJ1BFGFNRuQP7" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Mapa">
+      Ver en Google Maps
+    </a>
+    <a class="link-card" href="https://wa.me/5491165678127" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      WhatsApp
+    </a>
+    <a class="link-card" href="https://www.instagram.com/donpilo.pasteleria" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      Instagram
+    </a>
+  </div>
+
+  <!-- ✨ NUEVAS SUCURSALES (copiá este bloque y completá) -->
+  <!--
+  <h2>🍩 Don Pilo [Dirección]</h2>
+  <div class="links">
+    <a class="link-card" href="[LINK carta digital]" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Carta">
+      Carta Digital
+    </a>
+    <a class="link-card" href="[LINK de Google Maps]" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Mapa">
+      Ver en Google Maps
+    </a>
+    <a class="link-card" href="https://wa.me/[CODIGO_PAIS+NUMERO]" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      WhatsApp
+    </a>
+    <a class="link-card" href="[LINK Instagram]" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      Instagram
+    </a>
+  </div>
+  -->
+
+  <footer>
+    © 2025 Don Pilo - La Pastisería | Todos los derechos reservados
+  </footer>
+</body>
+</html>
