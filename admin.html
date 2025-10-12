@@ -11,166 +11,120 @@
       background: #f7f3f0;
       color: #333;
     }
-    h1 {
-      text-align: center;
-      color: #806250;
-    }
+    h1 { text-align: center; color: #806250; }
     form {
-      background: #fff;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      transition: box-shadow 0.5s;
+      background: #fff; padding: 15px; border-radius: 10px;
+      margin-bottom: 20px; transition: box-shadow 0.5s;
     }
-    form.editando {
-      box-shadow: 0 0 15px #806250;
-    }
+    form.editando { box-shadow: 0 0 15px #806250; }
     input, textarea, datalist {
-      width: 100%;
-      padding: 8px;
-      margin: 6px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      width: 100%; padding: 8px; margin: 6px 0;
+      border: 1px solid #ccc; border-radius: 6px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background: #806250;
-      color: white;
-    }
-    img {
-      max-width: 60px;
-      border-radius: 6px;
-    }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #806250; color: white; }
+    img { max-width: 60px; border-radius: 6px; }
     button {
-      cursor: pointer;
-      background: #806250;
-      color: white;
-      border: none;
-      padding: 6px 10px;
-      border-radius: 6px;
+      cursor: pointer; background: #806250; color: white;
+      border: none; padding: 6px 10px; border-radius: 6px;
       transition: background 0.3s;
     }
-    button:hover {
-      background: #a07b68;
-    }
-    #preview {
-      max-width: 100px;
-      margin-top: 5px;
-      display: block;
-      border-radius: 8px;
-    }
+    button:hover { background: #a07b68; }
+    #preview { max-width: 100px; margin-top: 5px; display: block; border-radius: 8px; }
     #search {
-      width: 60%;
-      padding: 8px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+      width: 60%; padding: 8px; border-radius: 6px; border: 1px solid #ccc;
     }
     .search-container {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 15px;
+      display: flex; gap: 10px; margin-bottom: 15px;
     }
     #btnArriba {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #806250;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      font-size: 20px;
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      display: none;
-      z-index: 100;
-      transition: background 0.3s;
+      position: fixed; bottom: 25px; right: 25px;
+      background: #806250; color: white;
+      border: none; border-radius: 50%;
+      width: 45px; height: 45px; font-size: 20px;
+      cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      display: none; z-index: 100; transition: background 0.3s;
     }
-    #btnArriba:hover {
-      background: #a07b68;
-    }
+    #btnArriba:hover { background: #a07b68; }
   </style>
 </head>
 <body>
   <h1>Panel de Administración - Don Pilose</h1>
 
-  <!-- BUSCADOR -->
-  <div class="search-container">
-    <input type="text" id="search" placeholder="Buscar producto...">
-    <button id="btnBuscar">Buscar</button>
+  <!-- LOGIN -->
+  <div id="loginBox" style="background:#eee;padding:15px;border-radius:10px;margin-bottom:20px;">
+    <h3>Acceso restringido</h3>
+    <p>Ingresa la clave de administrador:</p>
+    <input type="password" id="claveInput" placeholder="Clave (Menuclick)" style="padding:8px;width:70%;">
+    <button onclick="verificarClave()">Entrar</button>
   </div>
 
-  <!-- FORMULARIO -->
-  <form id="form">
-    <input type="hidden" id="editIndex">
-    <label>Nombre</label>
-    <input type="text" id="nombre" required>
+  <!-- CONTENIDO PRINCIPAL -->
+  <div id="adminContent" style="display:none;">
+    
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Buscar producto...">
+      <button onclick="filterProducts()">Buscar</button>
+    </div>
 
-    <label>Descripción</label>
-    <textarea id="descripcion" required></textarea>
+    <form id="form">
+      <input type="hidden" id="editIndex">
+      <label>Nombre</label>
+      <input type="text" id="nombre" required>
 
-    <label>Precio</label>
-    <input type="number" id="precio" required>
+      <label>Descripción</label>
+      <textarea id="descripcion" required></textarea>
 
-    <label>Imagen (ej: img/foto.jpg)</label>
-    <input type="text" id="imagen" required oninput="previewImage()">
-    <img id="preview" src="" alt="Vista previa">
+      <label>Precio</label>
+      <input type="number" id="precio" required>
 
-    <label>Categoría</label>
-    <input list="listaCategorias" type="text" id="categoria" placeholder="Ej: CAFETERÍA, POSTRES, etc." required>
-    <datalist id="listaCategorias"></datalist>
+      <label>Imagen (ej: img/foto.jpg)</label>
+      <input type="text" id="imagen" required oninput="previewImage()">
+      <img id="preview" src="" alt="Vista previa">
 
-    <button type="submit">Guardar</button>
-  </form>
+      <label>Categoría</label>
+      <input list="listaCategorias" type="text" id="categoria" placeholder="Ej: COMIDAS, POSTRES..." required>
+      <datalist id="listaCategorias"></datalist>
 
-  <!-- TABLA -->
-  <h2 id="tablaTitulo">Productos</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Imagen</th><th>Nombre</th><th>Descripción</th><th>Categoría</th><th>Precio</th><th>Acciones</th>
-      </tr>
-    </thead>
-    <tbody id="tbody"></tbody>
-  </table>
+      <button type="submit">Guardar</button>
+    </form>
+
+    <h2 id="tablaTitulo">Productos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Imagen</th><th>Nombre</th><th>Descripción</th><th>Categoría</th><th>Precio</th><th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
 
   <button id="btnArriba" onclick="subir()">⬆</button>
 
   <script>
-    // 🟤 CONFIG GITHUB
     const USERNAME = "donpilose-wq";
     const REPO = "menuclick";
     const FILE_PATH = "productos.json";
+    const CLAVE_SECRETA = "Menuclick";
     let productos = [];
 
-    // 🟤 TOKEN (solo tú lo usas)
-    const CLAVE_SECRETA = "Menuclick"; // palabra clave
-    const TOKEN_REAL = "PON_AQUI_TU_TOKEN_DE_GITHUB"; // ⚠️ reemplazá esto con tu token
-
-    function pedirClave() {
-      const clave = prompt("🔐 Ingrese la clave de administrador:");
+    // ✅ Verificación de clave privada
+    function verificarClave() {
+      const clave = document.getElementById("claveInput").value.trim();
       if (clave === CLAVE_SECRETA) {
-        localStorage.setItem("github_token", TOKEN_REAL);
-        alert("✅ Acceso autorizado.");
+        const token = prompt("🔐 Ingresá tu token de GitHub (solo tú lo ves):");
+        if (!token) return alert("❌ No ingresaste token, acceso cancelado.");
+        localStorage.setItem("github_token", token);
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("adminContent").style.display = "block";
+        loadProducts();
       } else {
-        alert("❌ Clave incorrecta. No se puede acceder.");
-        throw new Error("Acceso denegado.");
+        alert("❌ Clave incorrecta.");
       }
     }
 
-    pedirClave();
-
-    // 🟤 CARGAR PRODUCTOS
     async function loadProducts(){
       try {
         const res = await fetch("productos.json");
@@ -184,13 +138,13 @@
       }
     }
 
-    // 🟤 RENDER TABLA (índice real)
-    function render(lista){
-      const tb=document.getElementById('tbody'); 
-      tb.innerHTML='';
-      lista.forEach((p)=>{
-        const indexOriginal = productos.indexOf(p); // índice real
-        tb.innerHTML+=`
+    // ✅ Render seguro (corrige error de índices)
+    function render(lista) {
+      const tb = document.getElementById('tbody');
+      tb.innerHTML = '';
+      lista.forEach(p => {
+        const indexOriginal = productos.indexOf(p);
+        tb.innerHTML += `
           <tr>
             <td><img src="${p.imagen}" alt=""></td>
             <td>${p.nombre}</td>
@@ -205,9 +159,8 @@
       });
     }
 
-    // 🟤 ACTUALIZAR CATEGORÍAS
     function updateCategoryList(){
-      const cats=[...new Set(productos.map(p=>p.categoria))].sort();
+      const cats = [...new Set(productos.map(p=>p.categoria))].sort();
       const datalist=document.getElementById('listaCategorias');
       datalist.innerHTML='';
       cats.forEach(c=>{
@@ -217,29 +170,13 @@
       });
     }
 
-    // 🟤 BUSCADOR (solo busca con Enter o botón)
     const searchInput = document.getElementById("search");
-    const btnBuscar = document.getElementById("btnBuscar");
-
-    // Enter
-    searchInput.addEventListener("keypress", function(e){
-      if(e.key === "Enter"){
-        e.preventDefault();
-        filterProducts();
-      }
-    });
-
-    // Clic en botón
-    btnBuscar.addEventListener("click", function(){
-      filterProducts();
+    searchInput.addEventListener("keypress", e=>{
+      if(e.key==="Enter"){ e.preventDefault(); filterProducts(); }
     });
 
     function filterProducts(){
       const q = searchInput.value.toLowerCase().trim();
-      if(!q){
-        render(productos);
-        return;
-      }
       const filtrados = productos.filter(p =>
         p.nombre.toLowerCase().includes(q) ||
         p.descripcion.toLowerCase().includes(q) ||
@@ -248,18 +185,14 @@
       render(filtrados);
       if(filtrados.length>0){
         document.getElementById("tablaTitulo").scrollIntoView({ behavior: "smooth" });
-      } else {
-        alert("⚠️ No se encontraron productos que coincidan con la búsqueda.");
       }
     }
 
-    // 🟤 PREVIEW IMG
     function previewImage(){
       const src=document.getElementById('imagen').value.trim();
       document.getElementById('preview').src=src || '';
     }
 
-    // 🟤 GUARDAR EN GITHUB
     async function saveToGitHub(newContent){
       const TOKEN = localStorage.getItem("github_token");
       if(!TOKEN){ alert("⚠️ No autorizado."); return; }
@@ -282,10 +215,13 @@
       });
 
       if(updateRes.ok){ alert("✅ Cambios guardados en GitHub."); }
-      else{ alert("❌ Error al guardar en GitHub."); }
+      else{
+        const err = await updateRes.json();
+        console.error(err);
+        alert("❌ Error al guardar en GitHub: " + (err.message || updateRes.status));
+      }
     }
 
-    // 🟤 GUARDAR PRODUCTO
     document.getElementById('form').onsubmit=function(e){
       e.preventDefault();
       const idx=document.getElementById('editIndex').value;
@@ -306,7 +242,6 @@
       saveToGitHub(JSON.stringify(productos,null,2));
     }
 
-    // 🟤 EDITAR
     function edit(i){
       const p=productos[i];
       document.getElementById('nombre').value=p.nombre;
@@ -316,14 +251,12 @@
       document.getElementById('categoria').value=p.categoria;
       document.getElementById('editIndex').value=i;
       document.getElementById('preview').src=p.imagen;
-
       const form=document.getElementById('form');
       form.scrollIntoView({ behavior: "smooth", block: "start" });
       form.classList.add('editando');
       setTimeout(()=>form.classList.remove('editando'), 2000);
     }
 
-    // 🟤 ELIMINAR
     function del(i){
       if(confirm('¿Eliminar producto?')){
         productos.splice(i,1);
@@ -333,7 +266,6 @@
       }
     }
 
-    // 🟤 BOTÓN SUBIR
     window.onscroll = function() {
       document.getElementById("btnArriba").style.display =
         window.scrollY > 300 ? "block" : "none";
@@ -341,9 +273,6 @@
     function subir(){
       document.getElementById("form").scrollIntoView({ behavior: "smooth" });
     }
-
-    // 🟤 INICIO
-    loadProducts();
   </script>
 </body>
 </html>
