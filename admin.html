@@ -107,7 +107,7 @@
   <!-- BUSCADOR -->
   <div class="search-container">
     <input type="text" id="search" placeholder="Buscar producto...">
-    <button>Buscar</button>
+    <button id="btnBuscar">Buscar</button>
   </div>
 
   <!-- FORMULARIO -->
@@ -153,15 +153,14 @@
     const FILE_PATH = "productos.json";
     let productos = [];
 
-    // 🟤 TOKEN (encriptado)
-    const CLAVE_SECRETA = "Menuclick";
-    const TOKEN_CODIFICADO = "Z2hwX3h4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4"; // <-- reemplazá con tu token en Base64
+    // 🟤 TOKEN (solo tú lo usas)
+    const CLAVE_SECRETA = "Menuclick"; // palabra clave
+    const TOKEN_REAL = "PON_AQUI_TU_TOKEN_DE_GITHUB"; // ⚠️ reemplazá esto con tu token
 
     function pedirClave() {
       const clave = prompt("🔐 Ingrese la clave de administrador:");
       if (clave === CLAVE_SECRETA) {
-        const tokenDecodificado = atob(TOKEN_CODIFICADO);
-        localStorage.setItem("github_token", tokenDecodificado);
+        localStorage.setItem("github_token", TOKEN_REAL);
         alert("✅ Acceso autorizado.");
       } else {
         alert("❌ Clave incorrecta. No se puede acceder.");
@@ -185,14 +184,13 @@
       }
     }
 
-    // 🟤 RENDER TABLA (índices correctos)
-    function render(lista) {
-      const tb = document.getElementById('tbody');
-      tb.innerHTML = '';
-
-      lista.forEach((p) => {
-        const indexOriginal = productos.indexOf(p);
-        tb.innerHTML += `
+    // 🟤 RENDER TABLA (índice real)
+    function render(lista){
+      const tb=document.getElementById('tbody'); 
+      tb.innerHTML='';
+      lista.forEach((p)=>{
+        const indexOriginal = productos.indexOf(p); // índice real
+        tb.innerHTML+=`
           <tr>
             <td><img src="${p.imagen}" alt=""></td>
             <td>${p.nombre}</td>
@@ -219,40 +217,41 @@
       });
     }
 
-    // 🟤 FILTRAR PRODUCTOS (sin búsqueda en vivo)
-    function filterProducts() {
-      const q = document.getElementById("search").value.toLowerCase().trim();
-      if (!q) {
+    // 🟤 BUSCADOR (solo busca con Enter o botón)
+    const searchInput = document.getElementById("search");
+    const btnBuscar = document.getElementById("btnBuscar");
+
+    // Enter
+    searchInput.addEventListener("keypress", function(e){
+      if(e.key === "Enter"){
+        e.preventDefault();
+        filterProducts();
+      }
+    });
+
+    // Clic en botón
+    btnBuscar.addEventListener("click", function(){
+      filterProducts();
+    });
+
+    function filterProducts(){
+      const q = searchInput.value.toLowerCase().trim();
+      if(!q){
         render(productos);
         return;
       }
-
       const filtrados = productos.filter(p =>
         p.nombre.toLowerCase().includes(q) ||
         p.descripcion.toLowerCase().includes(q) ||
         p.categoria.toLowerCase().includes(q)
       );
-
       render(filtrados);
-
-      if (filtrados.length > 0) {
+      if(filtrados.length>0){
         document.getElementById("tablaTitulo").scrollIntoView({ behavior: "smooth" });
       } else {
         alert("⚠️ No se encontraron productos que coincidan con la búsqueda.");
       }
     }
-
-    // 🟤 EVENTOS DE BÚSQUEDA
-    const searchInput = document.getElementById("search");
-    searchInput.addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        filterProducts();
-      }
-    });
-    document.querySelector(".search-container button").addEventListener("click", function () {
-      filterProducts();
-    });
 
     // 🟤 PREVIEW IMG
     function previewImage(){
