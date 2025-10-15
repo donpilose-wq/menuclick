@@ -79,6 +79,7 @@
       gap: 10px;
       margin-bottom: 15px;
     }
+    /* 🔼 Botón flecha */
     #btnArriba {
       position: fixed;
       bottom: 25px;
@@ -139,9 +140,10 @@
     <input list="listaCategorias" type="text" id="categoria" placeholder="Ej: CAFETERÍA, POSTRES, etc." required>
     <datalist id="listaCategorias"></datalist>
 
-    <button type="submit">💾 Guardar</button>
+    <button type="submit">Guardar</button>
   </form>
 
+  <!-- TABLA -->
   <h2 id="tablaTitulo">Productos</h2>
   <table>
     <thead>
@@ -152,10 +154,10 @@
     <tbody id="tbody"></tbody>
   </table>
 
+  <!-- BOTÓN ARRIBA -->
   <button id="btnArriba" onclick="subir()">⬆️</button>
 
   <script>
-    // 🟤 CONFIG GITHUB
     const USERNAME = "donpilose-wq";
     const REPO = "menuclick";
     const FILE_PATH = "productos.json";
@@ -176,7 +178,7 @@
     }
     function getToken(){ return localStorage.getItem('github_token'); }
 
-    // 🟤 CARGAR PRODUCTOS DESDE GITHUB
+    // 🟤 CARGAR PRODUCTOS
     async function loadProducts(){
       const url=`https://raw.githubusercontent.com/${USERNAME}/${REPO}/main/${FILE_PATH}`;
       const res=await fetch(url);
@@ -197,8 +199,8 @@
             <td>${p.categoria}</td>
             <td>$${p.precio}</td>
             <td>
-              <button onclick="edit(${i})">✏️ Editar</button>
-              <button onclick="del(${i})">🗑️ Eliminar</button>
+              <button onclick="edit(${i})">Editar</button>
+              <button onclick="del(${i})">Eliminar</button>
             </td>
           </tr>`;
       });
@@ -228,8 +230,8 @@
     function filterProducts(){
       const q=searchInput.value.toLowerCase().trim();
       const filtrados=productos.filter(p=>
-        p.nombre.toLowerCase().includes(q)||
-        p.descripcion.toLowerCase().includes(q)||
+        p.nombre.toLowerCase().includes(q) ||
+        p.descripcion.toLowerCase().includes(q) ||
         p.categoria.toLowerCase().includes(q)
       );
       render(filtrados);
@@ -238,7 +240,7 @@
       }
     }
 
-    // 🟤 PREVIEW IMG
+    // 🟤 PREVIEW
     function previewImage(){
       const src=document.getElementById('imagen').value.trim();
       document.getElementById('preview').src=src||'';
@@ -248,11 +250,9 @@
     async function saveToGitHub(newContent){
       const TOKEN=getToken();
       if(!TOKEN){ alert("⚠️ Guardá tu token primero."); return; }
-
       const apiUrl=`https://api.github.com/repos/${USERNAME}/${REPO}/contents/${FILE_PATH}`;
-      const getRes=await fetch(apiUrl,{ headers:{Authorization:`token ${TOKEN}`} });
+      const getRes=await fetch(apiUrl,{headers:{Authorization:`token ${TOKEN}`}});
       const data=await getRes.json();
-
       const updateRes=await fetch(apiUrl,{
         method:"PUT",
         headers:{
@@ -265,12 +265,11 @@
           sha:data.sha
         })
       });
-
       if(updateRes.ok){ alert("✅ Cambios guardados en GitHub."); }
       else{ alert("❌ Error al guardar en GitHub."); }
     }
 
-    // 🟤 GUARDAR / EDITAR
+    // 🟤 GUARDAR PRODUCTO
     document.getElementById('form').onsubmit=function(e){
       e.preventDefault();
       const idx=document.getElementById('editIndex').value;
@@ -282,24 +281,29 @@
         categoria:document.getElementById('categoria').value
       };
       if(idx===''){ productos.push(prod);} 
-      else { productos[idx]=prod; document.getElementById('editIndex').value=''; }
+      else { productos[idx]=prod; document.getElementById('editIndex').value='';}
       render(productos);
       updateCategoryList();
       this.reset();
       document.getElementById('preview').src='';
-      document.getElementById('form').classList.remove('editando');
       saveToGitHub(JSON.stringify(productos,null,2));
     }
 
-    // 🟤 EDITAR
+    // 🟤 EDITAR (con arreglo del índice real)
     function edit(i){
-      const p=productos[i];
+      const tabla=document.getElementById('tbody');
+      const filas=tabla.querySelectorAll('tr');
+      const nombreSeleccionado=filas[i].children[1].innerText.trim();
+
+      const p=productos.find(prod=>prod.nombre.trim()===nombreSeleccionado);
+      const realIndex=productos.indexOf(p);
+
       document.getElementById('nombre').value=p.nombre;
       document.getElementById('descripcion').value=p.descripcion;
       document.getElementById('precio').value=p.precio;
       document.getElementById('imagen').value=p.imagen;
       document.getElementById('categoria').value=p.categoria;
-      document.getElementById('editIndex').value=i;
+      document.getElementById('editIndex').value=realIndex;
       document.getElementById('preview').src=p.imagen;
 
       const form=document.getElementById('form');
@@ -311,17 +315,19 @@
     // 🟤 ELIMINAR
     function del(i){
       if(confirm('¿Eliminar producto?')){
-        productos.splice(i,1);
+        const tabla=document.getElementById('tbody');
+        const nombre=tabla.querySelectorAll('tr')[i].children[1].innerText.trim();
+        const realIndex=productos.findIndex(prod=>prod.nombre.trim()===nombre);
+        productos.splice(realIndex,1);
         render(productos);
         updateCategoryList();
         saveToGitHub(JSON.stringify(productos,null,2));
       }
     }
 
-    // 🟤 BOTÓN SUBIR
+    // 🟤 BOTÓN ARRIBA
     window.onscroll=function(){
-      document.getElementById("btnArriba").style.display=
-        window.scrollY>300?"block":"none";
+      document.getElementById("btnArriba").style.display=window.scrollY>300?"block":"none";
     };
     function subir(){
       document.getElementById("form").scrollIntoView({behavior:"smooth"});
