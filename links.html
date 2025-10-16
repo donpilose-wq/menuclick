@@ -10,10 +10,9 @@
       font-family: Arial, sans-serif;
       background-color: #f8f8f8;
       background-image: url('img/fondomenu.png'); /* 🌄 Fondo actual */
-      background-repeat: no-repeat;
-      background-size: cover;          /* 🔹 Cubre todo sin deformar */
-      background-position: center;     /* 🔹 Centra la imagen */
-      background-attachment: fixed;    /* 🔹 Fijo en PC */
+      background-repeat: repeat-y;        /* 🔹 Repite verticalmente si el contenido es más alto */
+      background-size: cover;             /* 🔹 Mantiene proporción */
+      background-position: center top;    /* 🔹 Empieza centrado arriba */
       color: #333;
       display: flex;
       flex-direction: column;
@@ -36,6 +35,7 @@
     @media (max-width: 768px) {
       body {
         background-attachment: scroll;
+        background-repeat: repeat;
         background-size: contain;
         background-position: top center;
       }
@@ -203,9 +203,6 @@
 
   <footer>
     © 2025 Don Pilo - La Pastisería | Todos los derechos reservados
-  </footer>
-</body>
-</html>
   </footer>
 </body>
 </html>
