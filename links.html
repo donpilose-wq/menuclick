@@ -9,15 +9,36 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f8f8f8;
-      background-image: url('img/fondo-donpilo.jpg'); /* 🌄 Fondo personalizable */
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
+      background-image: url('img/fondomenu.png'); /* 🌄 Fondo actual */
+      background-repeat: no-repeat;
+      background-size: cover;          /* 🔹 Cubre todo sin deformar */
+      background-position: center;     /* 🔹 Centra la imagen */
+      background-attachment: fixed;    /* 🔹 Fijo en PC */
       color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 30px;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* 🔸 Velo oscuro semitransparente para mejorar contraste */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    /* 🔸 Mejora para celulares */
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: top center;
+      }
     }
 
     header {
@@ -119,7 +140,6 @@
       margin-right: 12px;
     }
 
-    /* 💡 Botón principal */
     .main-button {
       display: inline-block;
       margin: 15px auto 25px;
@@ -181,31 +201,11 @@
     </a>
   </div>
 
-  <!-- ✨ NUEVAS SUCURSALES (copiá este bloque y completá) -->
-  <!--
-  <h2>🍩 Don Pilo [Dirección]</h2>
-  <div class="links">
-    <a class="link-card" href="[LINK carta digital]" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Carta">
-      Carta Digital
-    </a>
-    <a class="link-card" href="[LINK de Google Maps]" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Mapa">
-      Ver en Google Maps
-    </a>
-    <a class="link-card" href="https://wa.me/[CODIGO_PAIS+NUMERO]" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-      WhatsApp
-    </a>
-    <a class="link-card" href="[LINK Instagram]" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-      Instagram
-    </a>
-  </div>
-  -->
-
   <footer>
     © 2025 Don Pilo - La Pastisería | Todos los derechos reservados
+  </footer>
+</body>
+</html>
   </footer>
 </body>
 </html>
