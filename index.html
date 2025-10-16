@@ -8,10 +8,29 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: url("img/fondomenu.png") repeat;
+      background: url("img/fondomenu.png") repeat-y center top fixed;
       background-size: cover;
       color: #cd0018f9;
+      min-height: 100vh;
     }
+
+    /* Fondo más legible con capa sutil */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.4);
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-attachment: scroll;
+        background-repeat: repeat;
+        background-size: contain;
+      }
+    }
+
     header {
       background: rgba(255,255,255,0.9);
     }
@@ -26,11 +45,14 @@
       padding: 10px;
       font-size: 1.5rem;
       font-weight: bold;
-      background: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.85);
       border-radius: 8px;
       margin: 15px auto;
       width: fit-content;
+      color: #000;
+      text-shadow: 1px 1px 3px rgba(255,255,255,0.7);
     }
+
     .categories {
       display: flex;
       flex-wrap: wrap;
@@ -51,6 +73,7 @@
     .categories button:hover {
       background-color: #fda40c;
     }
+
     .item-list {
       display: flex;
       flex-wrap: wrap;
@@ -86,11 +109,13 @@
       margin: 0 10px 10px;
       display: block;
     }
+
     .search-container {
       display: flex;
       justify-content: center;
       gap: 10px;
       padding: 10px;
+      flex-wrap: wrap;
     }
     #search {
       width: 60%;
@@ -121,7 +146,7 @@
   <div class="banner">¡Bienvenidos a Don Pilose!</div>
 
   <div class="search-container">
-    <input type="text" id="search" placeholder="Buscar producto...">
+    <input type="text" id="search" placeholder="Buscar producto..." />
     <button id="btnBuscar">Buscar</button>
   </div>
 
@@ -191,17 +216,17 @@
         p.descripcion.toLowerCase().includes(q) ||
         p.categoria.toLowerCase().includes(q)
       );
-      renderProducts('Todos');
       const container = document.getElementById('product-list');
       container.innerHTML = '';
       filtrados.forEach(p => {
         const item = document.createElement('div');
         item.className = 'item';
+        const priceDisplay = String(p.precio || '').startsWith('$') ? p.precio : ('$' + p.precio);
         item.innerHTML = `
           <img src="${p.imagen}" alt="${p.nombre}">
           <h3>${p.nombre}</h3>
           <p>${p.descripcion}</p>
-          <span class="price">$${p.precio}</span>
+          <span class="price">${priceDisplay}</span>
         `;
         container.appendChild(item);
       });
