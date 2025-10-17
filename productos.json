@@ -22,10 +22,10 @@
   },
   {
     "nombre": "Pastel de papas",
-    "descripcion": "Clásico pastel de carne con puré gratinado",
-    "precio": "13000",
-    "imagen": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3",
-    "categoria": "Platos principales 🍽️"
+    "descripcion": "Clásico pastel de carne con puré ",
+    "precio": 13000,
+    "imagen": "img/pasteldepapa.jpg",
+    "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Pollo con guarnición",
