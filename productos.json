@@ -16,9 +16,9 @@
   {
     "nombre": "Tallarines",
     "descripcion": "Pasta casera con salsa a elección",
-    "precio": "13000",
-    "imagen": "https://images.unsplash.com/photo-1617196038644-486ff788deaf",
-    "categoria": "Pastas 🍝"
+    "precio": 13000,
+    "imagen": "img/spageti.jpg",
+    "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Pastel de papas",
