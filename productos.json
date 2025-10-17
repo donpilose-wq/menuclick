@@ -8,10 +8,10 @@
   },
   {
     "nombre": "Canelones",
-    "descripcion": "Canelones rellenos con carne o verdura",
-    "precio": "13000",
+    "descripcion": "salsas(boloñesa,crema,rosa,estofado,blanca)",
+    "precio": 13000,
     "imagen": "https://images.unsplash.com/photo-1601924638867-3ec1cf2b8b88",
-    "categoria": "Pastas 🍝"
+    "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Tallarines",
