@@ -114,9 +114,9 @@
   {
     "nombre": "Tarta de pollo",
     "descripcion": "Porción de tarta de pollo casera",
-    "precio": "7500",
+    "precio": 7500,
     "imagen": "https://images.unsplash.com/photo-1625940600662-22d23f70e3e1",
-    "categoria": "Tartas 🥧"
+    "categoria": ""
   },
   {
     "nombre": "Torta de acelga",
