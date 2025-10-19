@@ -204,8 +204,8 @@
   },
   {
     "nombre": "Lengua a la vinagreta",
-    "descripcion": "Porción fría",
-    "precio": "32000",
+    "descripcion": "\tcomida por kilo",
+    "precio": 32000,
     "imagen": "https://images.unsplash.com/photo-1613145993481-1dfde9bcdc9b",
     "categoria": "Por Kilo"
   },
