@@ -341,5 +341,12 @@
     "precio": 42000,
     "imagen": "https://images.unsplash.com/photo-1600697395543-ef62b8e7daeb",
     "categoria": "Por Kilo"
+  },
+  {
+    "nombre": "FILET A LAROMANA ",
+    "descripcion": "comida por kilo",
+    "precio": 42000,
+    "imagen": "https://images.unsplash.com/photo-1600697395543-ef62b8e7daeb",
+    "categoria": "Por Kilo"
   }
 ]
