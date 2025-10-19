@@ -14,6 +14,7 @@
       min-height: 100vh;
     }
 
+    /* Fondo más legible con capa sutil */
     body::before {
       content: "";
       position: fixed;
@@ -30,18 +31,15 @@
       }
     }
 
-    /* 🔥 Encabezado corregido */
     header {
-      width: 100%;
-      height: 40vh; /* ocupa el 40% del alto visible */
-      min-height: 220px;
-      max-height: 380px;
-      background-image: url("img/lojo9.jpg"); /* tu imagen */
-      background-size: cover; /* cubre todo sin dejar espacio blanco */
-      background-position: center center; /* centrado vertical y horizontal */
-      background-repeat: no-repeat;
+      background: rgba(255,255,255,0.9);
     }
-
+    .banner-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
     .banner {
       text-align: center;
       padding: 10px;
@@ -138,18 +136,12 @@
     #btnBuscar:hover {
       background: #6b4e3d;
     }
-
-    @media (max-width: 600px) {
-      header {
-        height: 30vh;
-        min-height: 180px;
-      }
-    }
   </style>
 </head>
 <body>
-  <!-- 🔥 Header ahora usa fondo, no img -->
-  <header></header>
+  <header>
+    <img src="img/lojo9.jpg" alt="Don Pilose" class="banner-img" />
+  </header>
 
   <div class="banner">¡Bienvenidos a Don Pilose!</div>
 
@@ -244,4 +236,4 @@
     }
   </script>
 </body>
-</html>
+</html>......me sentras bien el lodo de don pilo pero no cabiando nada mas
