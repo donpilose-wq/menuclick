@@ -30,20 +30,16 @@
       }
     }
 
+    /* 🔥 Encabezado corregido */
     header {
       width: 100%;
-      height: 40vh; /* ocupa el 40% de la pantalla */
-      min-height: 180px;
-      max-height: 350px;
-      overflow: hidden;
-    }
-
-    .banner-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* llena todo el header sin dejar blanco */
-      object-position: center; /* centra la imagen */
-      display: block;
+      height: 40vh; /* ocupa el 40% del alto visible */
+      min-height: 220px;
+      max-height: 380px;
+      background-image: url("img/lojo9.jpg"); /* tu imagen */
+      background-size: cover; /* cubre todo sin dejar espacio blanco */
+      background-position: center center; /* centrado vertical y horizontal */
+      background-repeat: no-repeat;
     }
 
     .banner {
@@ -143,19 +139,17 @@
       background: #6b4e3d;
     }
 
-    /* Ajustes para celulares */
     @media (max-width: 600px) {
       header {
-        height: 30vh; /* un poco más chico en celular */
-        min-height: 150px;
+        height: 30vh;
+        min-height: 180px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="img/lojo9.jpg" alt="Don Pilose" class="banner-img" />
-  </header>
+  <!-- 🔥 Header ahora usa fondo, no img -->
+  <header></header>
 
   <div class="banner">¡Bienvenidos a Don Pilose!</div>
 
@@ -251,4 +245,3 @@
   </script>
 </body>
 </html>
-
