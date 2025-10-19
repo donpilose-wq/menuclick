@@ -128,9 +128,9 @@
   {
     "nombre": "Tarta de zapallito",
     "descripcion": "Porción de tarta de zapallito casera",
-    "precio": "7500",
+    "precio": 7500,
     "imagen": "https://images.unsplash.com/photo-1607290817800-6c8319a33a8e",
-    "categoria": "Tartas 🥧"
+    "categoria": ""
   },
   {
     "nombre": "Tortilla de papa",
