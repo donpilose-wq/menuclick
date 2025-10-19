@@ -225,7 +225,7 @@
   },
   {
     "nombre": "Lunes",
-    "descripcion": "Consulta el menú semanal (Pastel de papa  Lentejas, Arroz con pollo, Albóndigas, Mondongo, Pastas)",
+    "descripcion": "Consulta el menú semanal (Pastel de papa Lentejas, Arroz con pollo, Albóndigas, Mondongo, Pastas)",
     "precio": 13000,
     "imagen": "https://images.unsplash.com/photo-1608032079925-471c6c5a13b1",
     "categoria": "Por kilo"
