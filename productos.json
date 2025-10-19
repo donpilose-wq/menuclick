@@ -58,9 +58,9 @@
   {
     "nombre": "Matambre con guarnición",
     "descripcion": "Matambre tierno con guarnición",
-    "precio": "14000",
+    "precio": 14000,
     "imagen": "https://images.unsplash.com/photo-1608032079925-471c6c5a13b1",
-    "categoria": "Parrilla 🔥"
+    "categoria": ""
   },
   {
     "nombre": "Milanesa con guarnición",
