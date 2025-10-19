@@ -135,9 +135,9 @@
   {
     "nombre": "Tortilla de papa",
     "descripcion": "Tortilla clásica de papa",
-    "precio": "8000",
+    "precio": 8000,
     "imagen": "https://images.unsplash.com/photo-1585416668193-3e26b3e44b51",
-    "categoria": "Tortillas 🍳"
+    "categoria": ""
   },
   {
     "nombre": "Tortilla de acelga",
