@@ -304,7 +304,7 @@
     "nombre": "Asado por kilo",
     "descripcion": "comida por kilo",
     "precio": 42000,
-    "imagen": "https://images.unsplash.com/photo-1600697395543-ef62b8e7daeb",
+    "imagen": "img/asado.jpg",
     "categoria": "Por Kilo"
   },
   {
