@@ -218,8 +218,8 @@
   },
   {
     "nombre": "Berenjenas a la vinagreta",
-    "descripcion": "Porción fría",
-    "precio": "30000",
+    "descripcion": "comida por kilo",
+    "precio": 30000,
     "imagen": "https://images.unsplash.com/photo-1613145993574-4e43a0b75639",
     "categoria": "Por Kilo"
   },
