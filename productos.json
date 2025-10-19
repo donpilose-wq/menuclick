@@ -211,8 +211,8 @@
   },
   {
     "nombre": "Morrones a la vinagreta",
-    "descripcion": "Porción fría",
-    "precio": "30000",
+    "descripcion": "comida por kilo",
+    "precio": 30000,
     "imagen": "https://images.unsplash.com/photo-1603048291784-0b8ff5e1e8e8",
     "categoria": "Por Kilo"
   },
