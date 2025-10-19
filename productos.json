@@ -107,9 +107,9 @@
   {
     "nombre": "Tarta de jamón y queso",
     "descripcion": "Porción de tarta casera",
-    "precio": "7500",
+    "precio": 7500,
     "imagen": "https://images.unsplash.com/photo-1604335381459-3a3c0f7d9ad3",
-    "categoria": "Tartas 🥧"
+    "categoria": ""
   },
   {
     "nombre": "Tarta de pollo",
