@@ -236,5 +236,12 @@
     "precio": "13000",
     "imagen": "https://images.unsplash.com/photo-1606755962773-0d2f8667f89e",
     "categoria": "Sándwiches 🥪"
+  },
+  {
+    "nombre": "Bamba de Papa",
+    "descripcion": "papa y jyq",
+    "precio": 6000,
+    "imagen": "img/ravio.jpg",
+    "categoria": "Por Unidad"
   }
 ]
