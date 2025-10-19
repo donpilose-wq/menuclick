@@ -232,7 +232,7 @@
   },
   {
     "nombre": "Sándwich Vacio con fritas",
-    "descripcion": "Con lechuga, tomate, huevo, cebolla y mayonesa",
+    "descripcion": "Con lechuga, tomate, huevo, cebolla y mayonesa$",
     "precio": 13000,
     "imagen": "https://images.unsplash.com/photo-1606755962773-0d2f8667f89e",
     "categoria": "Sándwiches 🥪"
