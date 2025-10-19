@@ -198,9 +198,9 @@
   {
     "nombre": "Empanada de carne / pollo / jamón y queso",
     "descripcion": "Por unidad",
-    "precio": "2500",
+    "precio": 2500,
     "imagen": "https://images.unsplash.com/photo-1625940600803-29a4475b40c2",
-    "categoria": "Empanadas 🥟"
+    "categoria": ""
   },
   {
     "nombre": "Lengua a la vinagreta",
