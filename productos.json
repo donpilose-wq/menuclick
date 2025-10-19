@@ -142,9 +142,9 @@
   {
     "nombre": "Tortilla de acelga",
     "descripcion": "Tortilla verde de acelga",
-    "precio": "8000",
+    "precio": 8000,
     "imagen": "https://images.unsplash.com/photo-1613145993574-4e43a0b75639",
-    "categoria": "Tortillas 🍳"
+    "categoria": ""
   },
   {
     "nombre": "Budín de pan",
