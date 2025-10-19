@@ -44,7 +44,7 @@
   {
     "nombre": "Vacío con guarnición",
     "descripcion": "Vacío al horno o parrilla con guarnición",
-    "precio": 42000,
+    "precio": 0,
     "imagen": "img/vacio.jpg",
     "categoria": "Porción 🍽️"
   },
