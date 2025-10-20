@@ -190,7 +190,7 @@
   },
   {
     "nombre": "Ensaladas",
-    "descripcion": "Papa, zanahoria, arvejas y mayonesa",
+    "descripcion": "",
     "precio": 5000,
     "imagen": "img/rusa.jpg",
     "categoria": "Guarniciones 🥗"
