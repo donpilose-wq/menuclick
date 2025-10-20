@@ -136,7 +136,7 @@
     "nombre": "Tortilla de papa",
     "descripcion": "Tortilla clásica de papa",
     "precio": 8000,
-    "imagen": "https://images.unsplash.com/photo-1585416668193-3e26b3e44b51",
+    "imagen": "img/tortilladepapa.jpg",
     "categoria": "Porción 🍽️"
   },
   {
