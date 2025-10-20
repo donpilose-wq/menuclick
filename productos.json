@@ -376,5 +376,12 @@
     "precio": 6000,
     "imagen": "img/torreja.jpg",
     "categoria": "Por Unidad"
+  },
+  {
+    "nombre": "Spiedo",
+    "descripcion": "Pollo al Spiedo",
+    "precio": 42000,
+    "imagen": "img/espi.jpg",
+    "categoria": "Por Kilo"
   }
 ]
