@@ -191,8 +191,8 @@
   {
     "nombre": "Ensalada rusa",
     "descripcion": "Papa, zanahoria, arvejas y mayonesa",
-    "precio": "5000",
-    "imagen": "https://images.unsplash.com/photo-1625940626060-91e216664a52",
+    "precio": 5000,
+    "imagen": "img/rusa.jpg",
     "categoria": "Guarniciones 🥗"
   },
   {
