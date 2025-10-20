@@ -156,8 +156,8 @@
   {
     "nombre": "Flan",
     "descripcion": "Flan casero con dulce o crema",
-    "precio": "6000",
-    "imagen": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+    "precio": 6000,
+    "imagen": "img/flan.jpg",
     "categoria": "Postres 🍮"
   },
   {
