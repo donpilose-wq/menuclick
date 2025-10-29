@@ -157,9 +157,9 @@
   <!-- BOTÓN ARRIBA -->
   <button id="btnArriba" onclick="subir()">⬆️</button>
 
- <script>
+  <script>
   const USERNAME = "donpilose-wq";
-  const REPO = "menuclick"; // ⚠️ cambiar por "cartafrench" en la otra sucursal
+  const REPO = "menuclick"; 
   const FILE_PATH = "productos.json";
   let productos = [];
   let autoSaveTimer = null;
@@ -181,9 +181,9 @@
 
   // 🟤 CARGAR PRODUCTOS
   async function loadProducts(){
-    const url=`https://raw.githubusercontent.com/${USERNAME}/${REPO}/main/${FILE_PATH}`;
-    const res=await fetch(url);
-    productos=await res.json();
+    const url = `https://donpilose-wq.github.io/${REPO}/${FILE_PATH}`;
+    const res = await fetch(url);
+    productos = await res.json();
     render(productos);
     updateCategoryList();
   }
@@ -248,7 +248,7 @@
     document.getElementById('preview').src=src||'';
   }
 
-  // 🟤 NOTIFICACIÓN (sin alert)
+  // 🟤 NOTIFICACIÓN
   function mostrarNotificacion(mensaje, exito = true) {
     const notif = document.getElementById('notificacion');
     notif.style.background = exito ? '#806250' : '#c0392b';
@@ -285,7 +285,7 @@
     clearTimeout(autoSaveTimer);
     autoSaveTimer = setTimeout(()=>{
       const idx=document.getElementById('editIndex').value;
-      if(idx==='') return; // solo si estamos editando
+      if(idx==='') return; 
       productos[idx]={
         nombre:document.getElementById('nombre').value,
         descripcion:document.getElementById('descripcion').value,
@@ -294,7 +294,7 @@
         categoria:document.getElementById('categoria').value
       };
       saveToGitHub(JSON.stringify(productos,null,2));
-    },1000); // guarda 1 segundo después de dejar de escribir
+    },1000);
   }
 
   // 🟤 GUARDAR PRODUCTO MANUAL
@@ -319,23 +319,16 @@
 
   // 🟤 EDITAR
   function edit(i){
-    const tabla=document.getElementById('tbody');
-    const filas=tabla.querySelectorAll('tr');
-    const nombreSeleccionado=filas[i].children[1].innerText.trim();
-
-    const p=productos.find(prod=>prod.nombre.trim()===nombreSeleccionado);
-    const realIndex=productos.indexOf(p);
-
+    const p=productos[i];
     document.getElementById('nombre').value=p.nombre;
     document.getElementById('descripcion').value=p.descripcion;
     document.getElementById('precio').value=p.precio;
     document.getElementById('imagen').value=p.imagen;
     document.getElementById('categoria').value=p.categoria;
-    document.getElementById('editIndex').value=realIndex;
+    document.getElementById('editIndex').value=i;
     document.getElementById('preview').src=p.imagen;
-
     const form=document.getElementById('form');
-    form.scrollIntoView({behavior:"smooth",block:"start"});
+    form.scrollIntoView({behavior:"smooth"});
     form.classList.add('editando');
     setTimeout(()=>form.classList.remove('editando'),2000);
   }
@@ -343,10 +336,7 @@
   // 🟤 ELIMINAR
   function del(i){
     if(confirm('¿Eliminar producto?')){
-      const tabla=document.getElementById('tbody');
-      const nombre=tabla.querySelectorAll('tr')[i].children[1].innerText.trim();
-      const realIndex=productos.findIndex(prod=>prod.nombre.trim()===nombre);
-      productos.splice(realIndex,1);
+      productos.splice(i,1);
       render(productos);
       updateCategoryList();
       saveToGitHub(JSON.stringify(productos,null,2));
@@ -361,7 +351,7 @@
     document.getElementById("form").scrollIntoView({behavior:"smooth"});
   }
 
-  // 🟤 EVENTOS DE AUTO GUARDADO
+  // 🟤 EVENTOS AUTO GUARDADO
   ["nombre","descripcion","precio","imagen","categoria"].forEach(id=>{
     document.getElementById(id).addEventListener("input",autoGuardar);
   });
@@ -369,21 +359,22 @@
   // 🟤 INICIO
   loadProducts();
   if(getToken()){ document.getElementById('tokenStatus').innerText="🔐 Token cargado."; }
-</script>
+  </script>
 
-<!-- 🔔 Notificación -->
-<div id="notificacion" style="
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #806250;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  display: none;
-  z-index: 200;
-  font-weight: bold;
-  font-size: 15px;
-"></div>
-
+  <!-- 🔔 Notificación -->
+  <div id="notificacion" style="
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #806250;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 200;
+    font-weight: bold;
+    font-size: 15px;
+  "></div>
+</body>
+</html>
