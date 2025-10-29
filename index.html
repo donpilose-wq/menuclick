@@ -154,9 +154,8 @@
   <div class="item-list" id="product-list"></div>
 
   <script>
-    const RAW_URL = 'https://raw.githubusercontent.com/donpilose-wq/menuclick/main/productos.json';
+   const RAW_URL = 'https://donpilose-wq.github.io/menuclick/productos.json';
     let productos = [];
-
     fetch(RAW_URL)
       .then(response => response.json())
       .then(data => {
