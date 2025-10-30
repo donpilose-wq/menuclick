@@ -136,7 +136,7 @@
     "nombre": "Tortilla de papa",
     "descripcion": "Tortilla clásica de papa",
     "precio": 8000,
-    "imagen": "img/tortilladepapa.jpeg",
+    "imagen": "img/tortilladepapa.jpg",
     "categoria": "Porción 🍽️"
   },
   {
@@ -311,7 +311,7 @@
     "nombre": "Vacio por kilo",
     "descripcion": "comida por kilo",
     "precio": 42000,
-    "imagen": "img/",
+    "imagen": "img/vaciok.png",
     "categoria": "Por Kilo"
   },
   {
