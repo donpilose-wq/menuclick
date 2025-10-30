@@ -79,7 +79,6 @@
       gap: 10px;
       margin-bottom: 15px;
     }
-    /* 🔼 Botón flecha */
     #btnArriba {
       position: fixed;
       bottom: 25px;
@@ -188,23 +187,55 @@
     updateCategoryList();
   }
 
-  // 🟤 RENDER TABLA
+  // 🟤 RENDER TABLA (corregido)
   function render(lista){
-    const tb=document.getElementById('tbody'); tb.innerHTML='';
-    lista.forEach((p,i)=>{
-      tb.innerHTML+=`
-        <tr>
+    const tb = document.getElementById('tbody'); 
+    tb.innerHTML = '';
+    lista.forEach((p) => {
+      tb.innerHTML += `
+        <tr data-nombre="${p.nombre}">
           <td><img src="${p.imagen}" alt=""></td>
           <td>${p.nombre}</td>
           <td>${p.descripcion}</td>
           <td>${p.categoria}</td>
           <td>$${p.precio}</td>
           <td>
-            <button onclick="edit(${i})">Editar</button>
-            <button onclick="del(${i})">Eliminar</button>
+            <button onclick="editProduct('${p.nombre.replace(/'/g, "\\'")}')">Editar</button>
+            <button onclick="deleteProduct('${p.nombre.replace(/'/g, "\\'")}')">Eliminar</button>
           </td>
         </tr>`;
     });
+  }
+
+  // 🟤 EDITAR PRODUCTO
+  function editProduct(nombre){
+    const p = productos.find(prod => prod.nombre === nombre);
+    if(!p) return;
+
+    document.getElementById('nombre').value = p.nombre;
+    document.getElementById('descripcion').value = p.descripcion;
+    document.getElementById('precio').value = p.precio;
+    document.getElementById('imagen').value = p.imagen;
+    document.getElementById('categoria').value = p.categoria;
+    document.getElementById('editIndex').value = productos.indexOf(p);
+    document.getElementById('preview').src = p.imagen;
+
+    const form = document.getElementById('form');
+    form.scrollIntoView({behavior:"smooth", block:"start"});
+    form.classList.add('editando');
+    setTimeout(()=>form.classList.remove('editando'),2000);
+  }
+
+  // 🟤 ELIMINAR PRODUCTO
+  function deleteProduct(nombre){
+    const i = productos.findIndex(prod => prod.nombre === nombre);
+    if(i === -1) return;
+    if(confirm('¿Eliminar producto?')){
+      productos.splice(i, 1);
+      render(productos);
+      updateCategoryList();
+      saveToGitHub(JSON.stringify(productos,null,2));
+    }
   }
 
   // 🟤 ACTUALIZAR CATEGORÍAS
@@ -280,69 +311,6 @@
     else{ mostrarNotificacion("❌ Error al guardar en GitHub.", false); }
   }
 
-  // 🟤 AUTO GUARDADO
-  function autoGuardar(){
-    clearTimeout(autoSaveTimer);
-    autoSaveTimer = setTimeout(()=>{
-      const idx=document.getElementById('editIndex').value;
-      if(idx==='') return; 
-      productos[idx]={
-        nombre:document.getElementById('nombre').value,
-        descripcion:document.getElementById('descripcion').value,
-        precio:parseFloat(document.getElementById('precio').value),
-        imagen:document.getElementById('imagen').value,
-        categoria:document.getElementById('categoria').value
-      };
-      saveToGitHub(JSON.stringify(productos,null,2));
-    },1000);
-  }
-
-  // 🟤 GUARDAR PRODUCTO MANUAL
-  document.getElementById('form').onsubmit=function(e){
-    e.preventDefault();
-    const idx=document.getElementById('editIndex').value;
-    const prod={
-      nombre:document.getElementById('nombre').value,
-      descripcion:document.getElementById('descripcion').value,
-      precio:parseFloat(document.getElementById('precio').value),
-      imagen:document.getElementById('imagen').value,
-      categoria:document.getElementById('categoria').value
-    };
-    if(idx===''){ productos.push(prod);} 
-    else { productos[idx]=prod; document.getElementById('editIndex').value='';}
-    render(productos);
-    updateCategoryList();
-    this.reset();
-    document.getElementById('preview').src='';
-    saveToGitHub(JSON.stringify(productos,null,2));
-  }
-
-  // 🟤 EDITAR
-  function edit(i){
-    const p=productos[i];
-    document.getElementById('nombre').value=p.nombre;
-    document.getElementById('descripcion').value=p.descripcion;
-    document.getElementById('precio').value=p.precio;
-    document.getElementById('imagen').value=p.imagen;
-    document.getElementById('categoria').value=p.categoria;
-    document.getElementById('editIndex').value=i;
-    document.getElementById('preview').src=p.imagen;
-    const form=document.getElementById('form');
-    form.scrollIntoView({behavior:"smooth"});
-    form.classList.add('editando');
-    setTimeout(()=>form.classList.remove('editando'),2000);
-  }
-
-  // 🟤 ELIMINAR
-  function del(i){
-    if(confirm('¿Eliminar producto?')){
-      productos.splice(i,1);
-      render(productos);
-      updateCategoryList();
-      saveToGitHub(JSON.stringify(productos,null,2));
-    }
-  }
-
   // 🟤 BOTÓN ARRIBA
   window.onscroll=function(){
     document.getElementById("btnArriba").style.display=window.scrollY>300?"block":"none";
@@ -351,9 +319,23 @@
     document.getElementById("form").scrollIntoView({behavior:"smooth"});
   }
 
-  // 🟤 EVENTOS AUTO GUARDADO
+  // 🟤 AUTO GUARDADO
   ["nombre","descripcion","precio","imagen","categoria"].forEach(id=>{
-    document.getElementById(id).addEventListener("input",autoGuardar);
+    document.getElementById(id).addEventListener("input",()=>{
+      clearTimeout(autoSaveTimer);
+      autoSaveTimer=setTimeout(()=>{
+        const idx=document.getElementById('editIndex').value;
+        if(idx==='') return;
+        productos[idx]={
+          nombre:document.getElementById('nombre').value,
+          descripcion:document.getElementById('descripcion').value,
+          precio:parseFloat(document.getElementById('precio').value),
+          imagen:document.getElementById('imagen').value,
+          categoria:document.getElementById('categoria').value
+        };
+        saveToGitHub(JSON.stringify(productos,null,2));
+      },1000);
+    });
   });
 
   // 🟤 INICIO
