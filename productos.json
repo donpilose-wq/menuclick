@@ -122,7 +122,7 @@
     "nombre": "Torta de acelga",
     "descripcion": "Porción de tarta de acelga casera",
     "precio": 7500,
-    "imagen": "img/tartadeacelga.jpg",
+    "imagen": "img/tartadeacelga.jpeg",
     "categoria": "Porción 🍽️"
   },
   {
@@ -213,7 +213,7 @@
     "nombre": "Morrones a la vinagreta",
     "descripcion": "comida por kilo",
     "precio": 30000,
-    "imagen": "img/morron.png",
+    "imagen": "https://images.unsplash.com/photo-1603048291784-0b8ff5e1e8e8",
     "categoria": "Por Kilo"
   },
   {
