@@ -122,7 +122,7 @@
     "nombre": "Torta de acelga",
     "descripcion": "Porción de tarta de acelga casera",
     "precio": 7500,
-    "imagen": "img/tartadeacelga.jpeg",
+    "imagen": "img/taracelg.png",
     "categoria": "Porción 🍽️"
   },
   {
@@ -353,7 +353,7 @@
     "nombre": "chori o morci",
     "descripcion": "por unidad",
     "precio": 5000,
-    "imagen": "img/mosi.png",
+    "imagen": "img/chorimorci.jpeg",
     "categoria": "Por Unidad"
   },
   {
