@@ -390,5 +390,12 @@
     "precio": 42000,
     "imagen": "img/bondiola.jpeg",
     "categoria": "Por Kilo"
+  },
+  {
+    "nombre": "Pollo entero con guarnición",
+    "descripcion": "Con guarnición a elección para 4 personas",
+    "precio": 30000,
+    "imagen": "img/parri.jpg",
+    "categoria": "Por Kilo"
   }
 ]
