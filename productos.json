@@ -359,7 +359,7 @@
   {
     "nombre": "Milanesa o Suprema ",
     "descripcion": "por unidad",
-    "precio": 9500,
+    "precio": null,
     "imagen": "img/milaconguarnicion.jpeg",
     "categoria": "Por Unidad"
   },
