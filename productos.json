@@ -373,7 +373,7 @@
   {
     "nombre": "Torreja de Acelga",
     "descripcion": "Torreja de Acelga",
-    "precio": null,
+    "precio": 4000,
     "imagen": "img/torreja.jpg",
     "categoria": "Por Unidad"
   },
