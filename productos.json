@@ -404,5 +404,12 @@
     "precio": 2000,
     "imagen": "img/milberen.jpg",
     "categoria": "Por Unidad"
+  },
+  {
+    "nombre": "matambre enrollado ",
+    "descripcion": "matambre enrollado ",
+    "precio": 0,
+    "imagen": "img/mataporuno.jpg",
+    "categoria": "Por Kilo"
   }
 ]
