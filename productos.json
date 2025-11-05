@@ -38,14 +38,14 @@
     "nombre": "Asado con guarnición",
     "descripcion": "Corte clásico a la parrilla con guarnición",
     "precio": 14000,
-    "imagen": "img/asadocongarni.jpg",
+    "imagen": "img/asadocg.jpgg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Vacío con guarnición",
     "descripcion": "Vacío al horno o parrilla con guarnición",
     "precio": 14000,
-    "imagen": "img/vaciocgu.jpg",
+    "imagen": "img/vaciocongurnicion.jpg",
     "categoria": "Porción 🍽️"
   },
   {
