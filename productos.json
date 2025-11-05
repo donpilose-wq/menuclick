@@ -366,7 +366,7 @@
   {
     "nombre": "Ensalada a elección ",
     "descripcion": "Lechuga, tomate, remolacha, zanahoria, huevo, chaucha, pepino, arroz, cebolla\nChica 6000 - Mediana 7000 - Grande 8000",
-    "precio": null,
+    "precio": 6000,
     "imagen": "img/guarniciones.jpeg",
     "categoria": "Guarniciones 🥗"
   },
