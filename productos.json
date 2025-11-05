@@ -184,8 +184,8 @@
   {
     "nombre": "Puré de calabaza",
     "descripcion": "Guarnición de calabaza",
-    "precio": "5000",
-    "imagen": "https://images.unsplash.com/photo-1625940600662-22d23f70e3e1",
+    "precio": 5000,
+    "imagen": "",
     "categoria": "Guarniciones 🥗"
   },
   {
