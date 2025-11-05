@@ -3,7 +3,7 @@
     "nombre": "Ravioles",
     "descripcion": "salsas(boloñesa,crema,rosa,estofado,blanca)",
     "precio": 13000,
-    "imagen": "img/.png",
+    "imagen": "img/ravio.jpg",
     "categoria": "Porción 🍽️"
   },
   {
@@ -17,7 +17,7 @@
     "nombre": "Tallarines",
     "descripcion": "Pasta casera con salsa a elección",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/spageti.jpg",
     "categoria": "Porción 🍽️"
   },
   {
@@ -31,77 +31,77 @@
     "nombre": "Pollo con guarnición",
     "descripcion": "Pechuga de pollo a la plancha con acompañamiento a elección",
     "precio": 13000,
-    "imagen": "img/jpg",
+    "imagen": "img/cuartodepolloconguarni.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Asado con guarnición",
     "descripcion": "Corte clásico a la parrilla con guarnición",
     "precio": 14000,
-    "imagen": "img/.jpg",
+    "imagen": "img/asadoconguarni.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Vacío con guarnición",
     "descripcion": "Vacío al horno o parrilla con guarnición",
     "precio": 14000,
-    "imagen": "img.jpg",
+    "imagen": "img/vacioconguarnicion.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Bondiola con guarnición",
     "descripcion": "Bondiola tierna al horno con guarnición",
     "precio": 14000,
-    "imagen": "img/.jpg",
+    "imagen": "img/bondiolaconguarni.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Matambre con guarnición",
     "descripcion": "Matambre tierno con guarnición",
     "precio": 14000,
-    "imagen": "img/.jpg",
+    "imagen": "img/matambrealapizza.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Milanesa con guarnición",
     "descripcion": "De carne o pollo con acompañamiento a elección",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/miladecarne.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Suprema con guarnición",
     "descripcion": "Suprema de pollo con acompañamiento",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/suprema.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Milanesa napolitana con guarnición",
     "descripcion": "Milanesa con salsa, jamón y queso",
     "precio": 14000,
-    "imagen": "img/.jpg",
+    "imagen": "img/milanapo.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Suprema napolitana con guarnición",
     "descripcion": "Suprema con salsa, jamón y queso",
     "precio": 14000,
-    "imagen": "img/.jpg",
+    "imagen": "img/supremanapo.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Filet con guarnición",
     "descripcion": "Filet de merluza con acompañamiento",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/escalopeconguarni.jpg",
     "categoria": "Porción 🍽️"
   },
   {
     "nombre": "Escalope con guarnición",
     "descripcion": "Escalope de carne al horno con acompañamiento",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/escalope.jpg",
     "categoria": "Porción 🍽️"
   },
   {
@@ -129,7 +129,7 @@
     "nombre": "Tarta de zapallito",
     "descripcion": "Porción de tarta de zapallito casera",
     "precio": 7500,
-    "imagen": "img/.jpg",
+    "imagen": "img/zapallito.jpg",
     "categoria": "Porción 🍽️"
   },
   {
@@ -150,7 +150,7 @@
     "nombre": "Budín de pan",
     "descripcion": "Postre casero",
     "precio": 6000,
-    "imagen": "img/.jpg",
+    "imagen": "img/flan.jpg",
     "categoria": "Postres 🍮"
   },
   {
@@ -164,7 +164,7 @@
     "nombre": "Baston de muzzarella",
     "descripcion": " baston frito",
     "precio": 6000,
-    "imagen": "img/.jpg",
+    "imagen": "img/bastondemuzza.jpg",
     "categoria": "Por Unidad"
   },
   {
@@ -234,7 +234,7 @@
     "nombre": "Sándwich Vacio con fritas",
     "descripcion": "Con lechuga, tomate, huevo, cebolla y mayonesa$13000 o solo 12000",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/snwvacio.jpg",
     "categoria": "Sándwiches 🥪"
   },
   {
@@ -255,7 +255,7 @@
     "nombre": "Miércoles",
     "descripcion": "Albóndiga",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/albon.jpg",
     "categoria": "Plato del día 🍲"
   },
   {
@@ -276,7 +276,7 @@
     "nombre": "Sándwich Milanesa con fritas",
     "descripcion": "Con lechuga, tomate, huevo, cebolla y mayonesa$13000 o solo 12000",
     "precio": 13000,
-    "imagen": "img/.jpg",
+    "imagen": "img/milacompletaconpapas.jpg",
     "categoria": "Sándwiches 🥪"
   },
   {
@@ -322,7 +322,7 @@
     "categoria": "Por Kilo"
   },
   {
-    "nombre": "1/2 Pollo (solo)",
+    "nombre": "1/2 POLLO (solo)",
     "descripcion": "comida por kilo",
     "precio": 20000,
     "imagen": "img/parri.jpg",
@@ -336,51 +336,51 @@
     "categoria": "Por Kilo"
   },
   {
-    "nombre": "Escalope",
+    "nombre": "ESCALOPE",
     "descripcion": "comida por kilo",
     "precio": 42000,
     "imagen": "img/escalope.jpeg",
     "categoria": "Por Kilo"
   },
   {
-    "nombre": "Filet a la Romana",
+    "nombre": "FILET A LAROMANA ",
     "descripcion": "comida por kilo",
     "precio": 42000,
     "imagen": "img/firomana.png",
     "categoria": "Por Kilo"
   },
   {
-    "nombre": "Chori o Morci",
+    "nombre": "chori o morci",
     "descripcion": "por unidad",
-    "precio": 6000,
+    "precio": 5000,
     "imagen": "img/mosi.png",
     "categoria": "Por Unidad"
   },
   {
-    "nombre": "Milanesa o Suprema ",
+    "nombre": "mila o suprema ",
     "descripcion": "por unidad",
-    "precio": 10000,
+    "precio": 9500,
     "imagen": "img/milaconguarnicion.jpeg",
     "categoria": "Por Unidad"
   },
   {
     "nombre": "Ensalada a elección ",
-    "descripcion": "Lechuga, tomate, remolacha, zanahoria, huevo, chaucha, pepino, arroz, cebolla\nChica 6000 - Mediana 7000 - Grande 8000",
-    "precio": 6000,
+    "descripcion": "Lechuga, tomate, remolacha, zanahoria, huevo, chaucha, pepino, arroz, cebolla",
+    "precio": 5000,
     "imagen": "img/guarniciones.jpeg",
     "categoria": "Guarniciones 🥗"
   },
   {
     "nombre": "Torreja de Acelga",
     "descripcion": "Torreja de Acelga",
-    "precio": 4000,
+    "precio": 6000,
     "imagen": "img/torreja.jpg",
     "categoria": "Por Unidad"
   },
   {
-    "nombre": "Pollo al Spiedo",
-    "descripcion": "Solo 25000 - Con Guarnición 30000",
-    "precio": 25000,
+    "nombre": "Spiedo",
+    "descripcion": "Pollo al Spiedo",
+    "precio": 42000,
     "imagen": "img/espi.jpg",
     "categoria": "Por Kilo"
   },
