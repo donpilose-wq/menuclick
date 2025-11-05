@@ -318,7 +318,7 @@
     "nombre": "Matambre por kilo",
     "descripcion": "comida por kilo",
     "precio": 42000,
-    "imagen": "img/matambre.jpg",
+    "imagen": "img/.jpg",
     "categoria": "Por Kilo"
   },
   {
