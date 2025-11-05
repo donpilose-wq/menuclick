@@ -262,7 +262,7 @@
     "nombre": "Jueves",
     "descripcion": "ternerita guisada",
     "precio": 13000,
-    "imagen": "",
+    "imagen": "img/bombita.png",
     "categoria": "Plato del día 🍲"
   },
   {
