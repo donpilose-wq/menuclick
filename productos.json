@@ -397,5 +397,12 @@
     "precio": 30000,
     "imagen": "img/pentero.jpg",
     "categoria": "Por Kilo"
+  },
+  {
+    "nombre": "mila berenjena",
+    "descripcion": "por unidad ",
+    "precio": 2000,
+    "imagen": "img/milberen.jpg",
+    "categoria": "Por Unidad"
   }
 ]
