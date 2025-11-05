@@ -101,7 +101,7 @@
     "nombre": "Escalope con guarnición",
     "descripcion": "Escalope de carne al horno con acompañamiento",
     "precio": 13000,
-    "imagen": "img/escalope.jpg",
+    "imagen": "img/.jpg",
     "categoria": "Porción 🍽️"
   },
   {
