@@ -1,7 +1,7 @@
 [
   {
     "nombre": "Ravioles",
-    "descripcion": "salsas(boloñesa,crema,rosa,estofado,blanca)",
+    "descripcion": "salsa(boloñesa,crema,rosa,estofado,blanca)",
     "precio": 13000,
     "imagen": "img/ravio.jpg",
     "categoria": "Porción 🍽️"
