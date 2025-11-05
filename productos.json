@@ -255,7 +255,7 @@
     "nombre": "Miércoles",
     "descripcion": "Albóndiga",
     "precio": 13000,
-    "imagen": "img/albon.jpg",
+    "imagen": "img/.jpg",
     "categoria": "Plato del día 🍲"
   },
   {
