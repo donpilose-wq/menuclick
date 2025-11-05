@@ -66,7 +66,7 @@
     "nombre": "Milanesa con guarnición",
     "descripcion": "De carne o pollo con acompañamiento a elección",
     "precio": 13000,
-    "imagen": "i",
+    "imagen": "img/milaconguarnicion.jpeg",
     "categoria": "Porción 🍽️"
   },
   {
