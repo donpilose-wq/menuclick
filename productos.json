@@ -332,7 +332,7 @@
     "nombre": "Pollo entero (solo)",
     "descripcion": "comida por kilo",
     "precio": 25000,
-    "imagen": "img/parri.jpg",
+    "imagen": "img/",
     "categoria": "Por Kilo"
   },
   {
