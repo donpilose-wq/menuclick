@@ -379,7 +379,7 @@
   },
   {
     "nombre": "Pollo al Spiedo",
-    "descripcion": "Solo 25000\n",
+    "descripcion": "Solo 25000\nCon guarnicion",
     "precio": 42000,
     "imagen": "img/espi.jpg",
     "categoria": "Por Kilo"
