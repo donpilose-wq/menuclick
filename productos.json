@@ -255,7 +255,7 @@
     "nombre": "Miércoles",
     "descripcion": "Albóndiga",
     "precio": 13000,
-    "imagen": "img/albom.jpg",
+    "imagen": "img/mataguar.jpg",
     "categoria": "Plato del día 🍲"
   },
   {
@@ -395,7 +395,7 @@
     "nombre": "Pollo entero con guarnición",
     "descripcion": "Con guarnición a elección para 4 personas",
     "precio": 30000,
-    "imagen": "img/parri.jpg",
+    "imagen": "img/pentero.jpg",
     "categoria": "Por Kilo"
   }
 ]
