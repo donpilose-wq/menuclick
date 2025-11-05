@@ -397,5 +397,12 @@
     "precio": 30000,
     "imagen": "img/parri.jpg",
     "categoria": "Por Kilo"
+  },
+  {
+    "nombre": "Sándwiches Vacio",
+    "descripcion": "Con lechuga, tomate, huevo, cebolla y mayonesa$13000 o solo 12000",
+    "precio": 13000,
+    "imagen": "img/vaioosan.jpg",
+    "categoria": "Sándwiches 🥪"
   }
 ]
