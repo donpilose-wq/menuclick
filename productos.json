@@ -171,7 +171,7 @@
     "nombre": "Papas al horno",
     "descripcion": "Guarnición",
     "precio": 5000,
-    "imagen": "",
+    "imagen": "img/bombita.png",
     "categoria": "Guarniciones 🥗"
   },
   {
