@@ -220,7 +220,7 @@
     "nombre": "Berenjenas a la vinagreta",
     "descripcion": "comida por kilo",
     "precio": 30000,
-    "imagen": "",
+    "imagen": "img/bombita.png",
     "categoria": "Por Kilo"
   },
   {
