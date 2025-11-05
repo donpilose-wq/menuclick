@@ -331,7 +331,7 @@
   {
     "nombre": "POLLO ENTERO ",
     "descripcion": "comida por kilo",
-    "precio": 24000,
+    "precio": 25000,
     "imagen": "img/polloentero.jpg",
     "categoria": "Por Kilo"
   },
