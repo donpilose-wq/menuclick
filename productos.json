@@ -276,7 +276,7 @@
     "nombre": "Sándwich Milanesa con fritas",
     "descripcion": "Con lechuga, tomate, huevo, cebolla y mayonesa. Solo 12000",
     "precio": 13000,
-    "imagen": "img/milacompletaconpapas.jpg",
+    "imagen": "img/.jpg",
     "categoria": "Sándwiches 🥪"
   },
   {
