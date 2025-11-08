@@ -408,7 +408,7 @@
   {
     "nombre": "matambre enrollado ",
     "descripcion": "matambre enrollado ",
-    "precio": 0,
+    "precio": null,
     "imagen": "img/mataporuno.jpg",
     "categoria": "Por Kilo"
   }
