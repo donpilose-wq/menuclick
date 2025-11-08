@@ -365,7 +365,7 @@
   },
   {
     "nombre": "Ensalada a elección ",
-    "descripcion": "Lechuga, tomate, remolacha, zanahoria, huevo, chaucha, pepino, arroz, cebolla\n",
+    "descripcion": "Lechuga, tomate, remolacha, zanahoria, huevo, chaucha, pepino, arroz, cebolla\nch",
     "precio": 5000,
     "imagen": "img/guarniciones.jpeg",
     "categoria": "Guarniciones 🥗"
