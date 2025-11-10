@@ -170,28 +170,28 @@
   {
     "nombre": "Papas al horno",
     "descripcion": "Guarnición\nchica 6000, mediana 7000, grande 8000",
-    "precio": 5000,
+    "precio": 6000,
     "imagen": "img/ppapahorno.jpg",
     "categoria": "Guarniciones 🥗"
   },
   {
     "nombre": "Puré de papas",
     "descripcion": "Guarnición clásica\nchica 6000, mediana 7000, grande 8000",
-    "precio": 5000,
+    "precio": 6000,
     "imagen": "img/puregar.png",
     "categoria": "Guarniciones 🥗"
   },
   {
     "nombre": "Puré de calabaza",
     "descripcion": "Guarnición de calabaza\nchica 6000, mediana 7000, grande 8000",
-    "precio": 5000,
+    "precio": 6000,
     "imagen": "img/cala.jpg",
     "categoria": "Guarniciones 🥗"
   },
   {
     "nombre": "Ensalada Rusa",
     "descripcion": "Ensalada Rusa\nchica 6000, mediana 7000, grande 8000",
-    "precio": 5000,
+    "precio": 6000,
     "imagen": "img/larusi.png",
     "categoria": "Guarniciones 🥗"
   },
@@ -366,7 +366,7 @@
   {
     "nombre": "Ensalada a elección ",
     "descripcion": "Lechuga, tomate, remolacha, zanahoria, huevo, chaucha, pepino, arroz, cebolla\nchica 6000, mediana 7000, grande 8000",
-    "precio": 8000,
+    "precio": 6000,
     "imagen": "img/guarniciones.jpeg",
     "categoria": "Guarniciones 🥗"
   },
