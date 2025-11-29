@@ -310,7 +310,7 @@
   {
     "nombre": "Vacio por kilo",
     "descripcion": "comida por kilo",
-    "precio": 42000,
+    "precio": 4000,
     "imagen": "img/vaciok.png",
     "categoria": "Por Kilo"
   },
