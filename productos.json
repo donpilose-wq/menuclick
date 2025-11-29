@@ -310,14 +310,14 @@
   {
     "nombre": "Vacio por kilo",
     "descripcion": "comida por kilo",
-    "precio": 4000,
+    "precio": 43000,
     "imagen": "img/vaciok.png",
     "categoria": "Por Kilo"
   },
   {
     "nombre": "Matambre por kilo",
     "descripcion": "comida por kilo",
-    "precio": 42000,
+    "precio": 4000,
     "imagen": "img/IMG_1041.jpeg",
     "categoria": "Por Kilo"
   },
