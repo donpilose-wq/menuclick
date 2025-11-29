@@ -184,7 +184,7 @@
   {
     "nombre": "Puré de calabaza",
     "descripcion": "Guarnición de calabaza\nchica 6000, mediana 7000, grande 8000",
-    "precio": 6000,
+    "precio": 0,
     "imagen": "img/cala.jpg",
     "categoria": "Guarniciones 🥗"
   },
