@@ -331,7 +331,7 @@
   {
     "nombre": "Pollo entero (solo)",
     "descripcion": "comida por kilo",
-    "precio": 2000,
+    "precio": 25000,
     "imagen": "img/pollogran.jpg",
     "categoria": "Por Kilo"
   },
