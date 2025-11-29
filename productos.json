@@ -352,7 +352,7 @@
   {
     "nombre": "Chori o Morci",
     "descripcion": "por unidad",
-    "precio": 7000,
+    "precio": 0,
     "imagen": "img/mosi.png",
     "categoria": "Por Unidad"
   },
