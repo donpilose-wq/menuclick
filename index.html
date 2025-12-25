@@ -14,7 +14,6 @@
       min-height: 100vh;
     }
 
-    /* Fondo más legible con capa sutil */
     body::before {
       content: "";
       position: fixed;
@@ -78,7 +77,6 @@
       background-color: #ffba42;
     }
 
-    /* 🔥 TARJETAS RESPONSIVAS AUTOMÁTICAS */
     .item-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -151,14 +149,12 @@
       background: #6b4e3d;
     }
 
-    /* TABLET */
     @media (max-width: 900px) {
       .item-list {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       }
     }
 
-    /* CELULAR */
     @media (max-width: 600px) {
       .item-list {
         grid-template-columns: 1fr;
@@ -174,22 +170,28 @@
       }
     }
 
-    /* CELULAR MUY CHICO */
     @media (max-width: 400px) {
       .item {
         width: 98%;
       }
+    }
 
+    /* ✅ AJUSTE HERO PARA CELULARES (ÚNICO CAMBIO) */
+    @media (max-width: 600px) {
       .banner-img {
-        height: 180px;
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+        background-color: #fff;
       }
     }
 
   </style>
 </head>
 <body>
+
   <header>
-   <img src="img/fonnavidad.jpeg" alt="Don Pilo" class="banner-img" />
+    <img src="img/fonnavidad.jpeg" alt="Don Pilo" class="banner-img" />
   </header>
 
   <div class="banner">¡Bienvenidos a Don Pilo!</div>
@@ -232,12 +234,16 @@
     function renderProducts(categoria) {
       const container = document.getElementById('product-list');
       container.innerHTML = '';
-      const filtrados = categoria === 'Todos' ? productos : productos.filter(p => p.categoria === categoria);
+      const filtrados = categoria === 'Todos'
+        ? productos
+        : productos.filter(p => p.categoria === categoria);
 
       filtrados.forEach(p => {
         const item = document.createElement('div');
         item.className = 'item';
-        const priceDisplay = String(p.precio || '').startsWith('$') ? p.precio : ('$' + p.precio);
+        const priceDisplay = String(p.precio || '').startsWith('$')
+          ? p.precio
+          : ('$' + p.precio);
 
         item.innerHTML = `
           <img src="${p.imagen}" alt="${p.nombre}">
@@ -274,7 +280,9 @@
       filtrados.forEach(p => {
         const item = document.createElement('div');
         item.className = 'item';
-        const priceDisplay = String(p.precio || '').startsWith('$') ? p.precio : ('$' + p.precio);
+        const priceDisplay = String(p.precio || '').startsWith('$')
+          ? p.precio
+          : ('$' + p.precio);
 
         item.innerHTML = `
           <img src="${p.imagen}" alt="${p.nombre}">
@@ -290,5 +298,6 @@
       }
     }
   </script>
+
 </body>
 </html>
