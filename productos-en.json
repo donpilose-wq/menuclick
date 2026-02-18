@@ -139,7 +139,7 @@
     "id": "prod0018",
     "name": "Torta de acelga",
     "description": "Porción de tarta de acelga casera",
-    "price": "9000",
+    "price": "8500",
     "image": "img/taracelg.png",
     "category": "Porción 🍽️"
   },
@@ -147,7 +147,7 @@
     "id": "prod0019",
     "name": "Tarta de zapallito",
     "description": "Porción de tarta de zapallito casera",
-    "price": "9000",
+    "price": "8500",
     "image": "img/tarzapalli.jpg",
     "category": "Porción 🍽️"
   },
@@ -163,7 +163,7 @@
     "id": "prod0021",
     "name": "Tortilla de acelga",
     "description": "Tortilla verde de acelga",
-    "price": "8500",
+    "price": "9000",
     "image": "img/taracel.png",
     "category": "Porción 🍽️"
   },
@@ -235,7 +235,7 @@
     "id": "prod0030",
     "name": "Lengua a la vinagreta",
     "description": "comida por kilo",
-    "price": "34000",
+    "price": "42000",
     "image": "img/lenguavinagreta.jpeg",
     "category": "Por Kilo"
   },
@@ -267,7 +267,7 @@
     "id": "prod0034",
     "name": "Sándwich Vacio con fritas",
     "description": "Con lechuga, tomate, huevo, cebolla y mayonesa$16000 o solo 15000",
-    "price": "15000",
+    "price": "16000",
     "image": "img/vaioosan.jpg",
     "category": "Sándwiches 🥪"
   },
@@ -315,7 +315,7 @@
     "id": "prod0040",
     "name": "Sándwich Milanesa con fritas",
     "description": "Con lechuga, tomate, huevo, cebolla y mayonesa 16000. Solo 15000",
-    "price": "15000",
+    "price": "16000",
     "image": "img/IMG_1098.jpeg",
     "category": "Sándwiches 🥪"
   },
@@ -323,7 +323,7 @@
     "id": "prod0041",
     "name": "Sándwich Matambre con fritas",
     "description": "Con lechuga, tomate, huevo, cebolla y mayonesa$16000 o solo 15000",
-    "price": "15000",
+    "price": "16000",
     "image": "img/sanmatamb.jpg",
     "category": "Sándwiches 🥪"
   },
@@ -331,7 +331,7 @@
     "id": "prod0042",
     "name": "Sandwich Bondiola con fritas",
     "description": "Con lechuga, tomate, huevo, cebolla y mayonesa$16000 o solo 15000",
-    "price": "15000",
+    "price": "16000",
     "image": "img/.jpg",
     "category": "Sándwiches 🥪"
   },
@@ -339,7 +339,7 @@
     "id": "prod0043",
     "name": "Sándwich Pollo con fritas",
     "description": "Con lechuga, tomate, huevo, cebolla y mayonesa$16000 o solo 15000",
-    "price": "15000",
+    "price": "16000",
     "image": "img/sandwpollo.jpg",
     "category": "Sándwiches 🥪"
   },
@@ -427,7 +427,7 @@
     "id": "prod0054",
     "name": "Torreja de Acelga",
     "description": "Torreja de Acelga",
-    "price": "4000",
+    "price": "5000",
     "image": "img/torre.jpg",
     "category": "Por Unidad"
   },
