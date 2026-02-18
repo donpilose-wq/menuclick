@@ -442,7 +442,7 @@
   {
     "nome": "Bondiola",
     "descricao": "Precio Por kilo",
-    "preco": "48000",
+    "preco": "52000",
     "imagem": "img/bondiola.jpeg",
     "categoria": "Por Kilo",
     "id": "prod0056"
@@ -450,7 +450,7 @@
   {
     "nome": "Pollo entero con guarnición",
     "descricao": "Con guarnición a elección para 4 personas",
-    "preco": "30000",
+    "preco": "32000",
     "imagem": "img/pentero.jpg",
     "categoria": "Por Kilo",
     "id": "prod0057"
