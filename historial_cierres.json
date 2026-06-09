@@ -1,0 +1,65 @@
+[
+  {
+    "fecha": "9/6/2026, 1:28:42",
+    "efectivo": 16022,
+    "otros": 32000,
+    "total": 48022,
+    "total_gastos": 200,
+    "cantidad_ventas": 3,
+    "ventas_del_dia": [
+      {
+        "fecha": "9/6/2026, 1:25:47",
+        "total": 16000,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0010",
+            "nombre": "Milanesa con guarnición",
+            "precio": "16000",
+            "cantidad": 1,
+            "subtotal": 16000
+          }
+        ]
+      },
+      {
+        "fecha": "9/6/2026, 1:26:27",
+        "total": 32000,
+        "metodo": "qr",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0042",
+            "nombre": "Sandwich Bondiola con fritas",
+            "precio": "16000",
+            "cantidad": 1,
+            "subtotal": 16000
+          },
+          {
+            "id": "prod0001",
+            "nombre": "Ravioles",
+            "precio": "16000",
+            "cantidad": 1,
+            "subtotal": 16000
+          }
+        ]
+      },
+      {
+        "fecha": "9/6/2026, 1:27:00",
+        "total": -200,
+        "metodo": "efectivo",
+        "detalle": "GASTO: pan",
+        "productos": []
+      },
+      {
+        "fecha": "9/6/2026, 1:27:46",
+        "total": 222,
+        "metodo": "efectivo",
+        "detalle": "COBRO VALE: marcos",
+        "productos": []
+      }
+    ],
+    "fiados_al_cierre": [],
+    "total_fiados_pendientes": 0
+  }
+]
