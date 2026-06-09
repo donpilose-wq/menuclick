@@ -61,5 +61,62 @@
     ],
     "fiados_al_cierre": [],
     "total_fiados_pendientes": 0
+  },
+  {
+    "fecha": "9/6/2026, 2:26:41",
+    "efectivo": 81000,
+    "otros": 0,
+    "total": 81000,
+    "total_gastos": 0,
+    "cantidad_ventas": 3,
+    "ventas_del_dia": [
+      {
+        "fecha": "9/6/2026, 2:15:04",
+        "total": 16000,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0043",
+            "nombre": "Sándwich Pollo con fritas",
+            "precio": "16000",
+            "cantidad": 1,
+            "subtotal": 16000
+          }
+        ]
+      },
+      {
+        "fecha": "9/6/2026, 2:19:00",
+        "total": 17000,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0012",
+            "nombre": "Milanesa napolitana con guarnición",
+            "precio": "17000",
+            "cantidad": 1,
+            "subtotal": 17000
+          }
+        ]
+      },
+      {
+        "fecha": "9/6/2026, 2:25:36",
+        "total": 48000,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0014",
+            "nombre": "Filet con guarnición",
+            "precio": "16000",
+            "cantidad": 3,
+            "subtotal": 48000
+          }
+        ]
+      }
+    ],
+    "fiados_al_cierre": [],
+    "total_fiados_pendientes": 0
   }
 ]
