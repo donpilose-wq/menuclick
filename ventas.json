@@ -1,0 +1,16 @@
+[
+  {
+    "total": 16000,
+    "metodo": "efectivo",
+    "fecha": "9/6/2026, 1:25:47",
+    "productos": [
+      {
+        "id": "prod0010",
+        "nombre": "Milanesa con guarnición",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      }
+    ]
+  }
+]
