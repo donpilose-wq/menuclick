@@ -33,5 +33,11 @@
         "subtotal": 16000
       }
     ]
+  },
+  {
+    "total": -200,
+    "metodo": "efectivo",
+    "fecha": "9/6/2026, 1:27:00",
+    "detalle": "GASTO: pan"
   }
 ]
