@@ -39,5 +39,11 @@
     "metodo": "efectivo",
     "fecha": "9/6/2026, 1:27:00",
     "detalle": "GASTO: pan"
+  },
+  {
+    "total": 222,
+    "metodo": "efectivo",
+    "fecha": "9/6/2026, 1:27:46",
+    "detalle": "COBRO VALE: marcos"
   }
 ]
