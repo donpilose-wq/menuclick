@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "total": 16000,
+    "metodo": "efectivo",
+    "fecha": "9/6/2026, 2:15:04",
+    "productos": [
+      {
+        "id": "prod0043",
+        "nombre": "Sándwich Pollo con fritas",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      }
+    ]
+  }
+]
