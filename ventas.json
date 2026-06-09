@@ -12,5 +12,19 @@
         "subtotal": 16000
       }
     ]
+  },
+  {
+    "total": 17000,
+    "metodo": "efectivo",
+    "fecha": "9/6/2026, 2:19:00",
+    "productos": [
+      {
+        "id": "prod0012",
+        "nombre": "Milanesa napolitana con guarnición",
+        "precio": "17000",
+        "cantidad": 1,
+        "subtotal": 17000
+      }
+    ]
   }
 ]
