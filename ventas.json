@@ -26,5 +26,19 @@
         "subtotal": 17000
       }
     ]
+  },
+  {
+    "total": 48000,
+    "metodo": "efectivo",
+    "fecha": "9/6/2026, 2:25:36",
+    "productos": [
+      {
+        "id": "prod0014",
+        "nombre": "Filet con guarnición",
+        "precio": "16000",
+        "cantidad": 3,
+        "subtotal": 48000
+      }
+    ]
   }
 ]
