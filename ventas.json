@@ -12,5 +12,26 @@
         "subtotal": 16000
       }
     ]
+  },
+  {
+    "total": 32000,
+    "metodo": "qr",
+    "fecha": "9/6/2026, 1:26:27",
+    "productos": [
+      {
+        "id": "prod0042",
+        "nombre": "Sandwich Bondiola con fritas",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      },
+      {
+        "id": "prod0001",
+        "nombre": "Ravioles",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      }
+    ]
   }
 ]
