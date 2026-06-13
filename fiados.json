@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "cliente": "marcos",
+    "monto": 15000
+  }
+]
