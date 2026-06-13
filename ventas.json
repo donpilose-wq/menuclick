@@ -32,5 +32,11 @@
         "subtotal": 32000
       }
     ]
+  },
+  {
+    "total": -15000,
+    "metodo": "efectivo",
+    "fecha": "13/6/2026, 11:57:36",
+    "detalle": "GASTO: marcos vale"
   }
 ]
