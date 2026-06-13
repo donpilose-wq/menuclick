@@ -12,5 +12,19 @@
         "subtotal": 18000
       }
     ]
+  },
+  {
+    "total": 16000,
+    "metodo": "efectivo",
+    "fecha": "13/6/2026, 11:51:21",
+    "productos": [
+      {
+        "id": "prod0040",
+        "nombre": "Sándwich Milanesa con fritas",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      }
+    ]
   }
 ]
