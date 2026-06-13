@@ -118,5 +118,59 @@
     ],
     "fiados_al_cierre": [],
     "total_fiados_pendientes": 0
+  },
+  {
+    "fecha": "13/6/2026, 12:18:25",
+    "efectivo": 3000,
+    "otros": 32000,
+    "total": 35000,
+    "total_gastos": 15000,
+    "cantidad_ventas": 2,
+    "ventas_del_dia": [
+      {
+        "fecha": "9/6/2026, 3:21:01",
+        "total": 18000,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0006",
+            "nombre": "Asado con guarnición",
+            "precio": "18000",
+            "cantidad": 1,
+            "subtotal": 18000
+          }
+        ]
+      },
+      {
+        "fecha": "13/6/2026, 11:51:24",
+        "total": 0,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": []
+      },
+      {
+        "fecha": "13/6/2026, 11:54:47",
+        "total": 32000,
+        "metodo": "qr",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0033",
+            "nombre": "Lunes",
+            "precio": "16000",
+            "cantidad": 2,
+            "subtotal": 32000
+          }
+        ]
+      },
+      {
+        "fecha": "13/6/2026, 11:57:36",
+        "total": -15000,
+        "metodo": "efectivo",
+        "detalle": "GASTO: marcos vale",
+        "productos": []
+      }
+    ]
   }
 ]
