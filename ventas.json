@@ -18,5 +18,11 @@
     "metodo": "efectivo",
     "fecha": "13/6/2026, 12:21:31",
     "detalle": "ADELANTO SUELDO: marcos"
+  },
+  {
+    "total": -2000,
+    "metodo": "efectivo",
+    "fecha": "13/6/2026, 12:21:59",
+    "detalle": "GASTO: pan"
   }
 ]
