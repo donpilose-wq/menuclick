@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "total": 32000,
+    "metodo": "efectivo",
+    "fecha": "13/6/2026, 12:20:56",
+    "productos": [
+      {
+        "id": "prod0036",
+        "nombre": "Martes",
+        "precio": "16000",
+        "cantidad": 2,
+        "subtotal": 32000
+      }
+    ]
+  }
+]
