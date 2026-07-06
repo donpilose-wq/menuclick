@@ -38,5 +38,26 @@
         "subtotal": 16000
       }
     ]
+  },
+  {
+    "total": 37000,
+    "metodo": "efectivo",
+    "fecha": "5/7/2026, 23:51:36",
+    "productos": [
+      {
+        "id": "prod0057",
+        "nombre": "Pollo entero con guarnición",
+        "precio": "32000",
+        "cantidad": 1,
+        "subtotal": 32000
+      },
+      {
+        "id": "prod0054",
+        "nombre": "Torreja de Acelga",
+        "precio": "5000",
+        "cantidad": 1,
+        "subtotal": 5000
+      }
+    ]
   }
 ]
