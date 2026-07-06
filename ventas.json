@@ -59,5 +59,26 @@
         "subtotal": 5000
       }
     ]
+  },
+  {
+    "total": 32000,
+    "metodo": "efectivo",
+    "fecha": "5/7/2026, 23:57:27",
+    "productos": [
+      {
+        "id": "prod0002",
+        "nombre": "Canelones",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      },
+      {
+        "id": "prod0015",
+        "nombre": "Escalope con guarnición",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      }
+    ]
   }
 ]
