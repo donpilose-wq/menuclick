@@ -80,5 +80,33 @@
         "subtotal": 16000
       }
     ]
+  },
+  {
+    "total": 32000,
+    "metodo": "efectivo",
+    "fecha": "6/7/2026, 0:00:15",
+    "productos": [
+      {
+        "id": "prod0002",
+        "nombre": "Canelones",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      },
+      {
+        "id": "prod0053",
+        "nombre": "Ensalada a elección ",
+        "precio": "8000",
+        "cantidad": 1,
+        "subtotal": 8000
+      },
+      {
+        "id": "prod0028",
+        "nombre": "Ensalada Rusa",
+        "precio": "8000",
+        "cantidad": 1,
+        "subtotal": 8000
+      }
+    ]
   }
 ]
