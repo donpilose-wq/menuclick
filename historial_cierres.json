@@ -301,5 +301,117 @@
     ],
     "fiados_al_cierre": [],
     "total_fiados_pendientes": 0
+  },
+  {
+    "fecha": "15/7/2026, 19:57:34",
+    "efectivo": 134000,
+    "otros": 99000,
+    "total": 233000,
+    "total_gastos": 0,
+    "cantidad_ventas": 4,
+    "ventas_del_dia": [
+      {
+        "fecha": "14/7/2026, 0:30:33",
+        "total": 68000,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0005",
+            "nombre": "1/4 dePollo con guarnición",
+            "precio": "16000",
+            "cantidad": 1,
+            "subtotal": 16000
+          },
+          {
+            "id": "prod0056",
+            "nombre": "Bondiola",
+            "precio": "52000",
+            "cantidad": 1,
+            "subtotal": 52000
+          }
+        ]
+      },
+      {
+        "fecha": "15/7/2026, 19:13:17",
+        "total": 70000,
+        "metodo": "debito",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0008",
+            "nombre": "Bondiola con guarnición",
+            "precio": "18000",
+            "cantidad": 1,
+            "subtotal": 18000
+          },
+          {
+            "id": "prod0056",
+            "nombre": "Bondiola",
+            "precio": "52000",
+            "cantidad": 1,
+            "subtotal": 52000
+          }
+        ]
+      },
+      {
+        "fecha": "15/7/2026, 19:44:01",
+        "total": 29000,
+        "metodo": "qr",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0005",
+            "nombre": "1/4 dePollo con guarnición",
+            "precio": "16000",
+            "cantidad": 1,
+            "subtotal": 16000
+          },
+          {
+            "id": "prod0051",
+            "nombre": "Chori o Morci",
+            "precio": "6000",
+            "cantidad": 1,
+            "subtotal": 6000
+          },
+          {
+            "id": "prod0022",
+            "nombre": "Budín de pan",
+            "precio": "7000",
+            "cantidad": 1,
+            "subtotal": 7000
+          }
+        ]
+      },
+      {
+        "fecha": "15/7/2026, 19:57:18",
+        "total": 66000,
+        "metodo": "efectivo",
+        "detalle": "Venta",
+        "productos": [
+          {
+            "id": "prod0024",
+            "nombre": "Baston de muzzarella",
+            "precio": "7000",
+            "cantidad": 1,
+            "subtotal": 7000
+          },
+          {
+            "id": "prod0056",
+            "nombre": "Bondiola",
+            "precio": "52000",
+            "cantidad": 1,
+            "subtotal": 52000
+          },
+          {
+            "id": "prod0035",
+            "nombre": "Bomba de Papa",
+            "precio": "7000",
+            "cantidad": 1,
+            "subtotal": 7000
+          }
+        ]
+      }
+    ]
   }
 ]
