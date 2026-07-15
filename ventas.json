@@ -19,5 +19,26 @@
         "subtotal": 52000
       }
     ]
+  },
+  {
+    "total": 70000,
+    "metodo": "debito",
+    "fecha": "15/7/2026, 19:13:17",
+    "productos": [
+      {
+        "id": "prod0008",
+        "nombre": "Bondiola con guarnición",
+        "precio": "18000",
+        "cantidad": 1,
+        "subtotal": 18000
+      },
+      {
+        "id": "prod0056",
+        "nombre": "Bondiola",
+        "precio": "52000",
+        "cantidad": 1,
+        "subtotal": 52000
+      }
+    ]
   }
 ]
