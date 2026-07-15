@@ -40,5 +40,33 @@
         "subtotal": 52000
       }
     ]
+  },
+  {
+    "total": 29000,
+    "metodo": "qr",
+    "fecha": "15/7/2026, 19:44:01",
+    "productos": [
+      {
+        "id": "prod0005",
+        "nombre": "1/4 dePollo con guarnición",
+        "precio": "16000",
+        "cantidad": 1,
+        "subtotal": 16000
+      },
+      {
+        "id": "prod0051",
+        "nombre": "Chori o Morci",
+        "precio": "6000",
+        "cantidad": 1,
+        "subtotal": 6000
+      },
+      {
+        "id": "prod0022",
+        "nombre": "Budín de pan",
+        "precio": "7000",
+        "cantidad": 1,
+        "subtotal": 7000
+      }
+    ]
   }
 ]
