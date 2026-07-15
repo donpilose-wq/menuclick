@@ -68,5 +68,33 @@
         "subtotal": 7000
       }
     ]
+  },
+  {
+    "total": 66000,
+    "metodo": "efectivo",
+    "fecha": "15/7/2026, 19:57:18",
+    "productos": [
+      {
+        "id": "prod0024",
+        "nombre": "Baston de muzzarella",
+        "precio": "7000",
+        "cantidad": 1,
+        "subtotal": 7000
+      },
+      {
+        "id": "prod0056",
+        "nombre": "Bondiola",
+        "precio": "52000",
+        "cantidad": 1,
+        "subtotal": 52000
+      },
+      {
+        "id": "prod0035",
+        "nombre": "Bomba de Papa",
+        "precio": "7000",
+        "cantidad": 1,
+        "subtotal": 7000
+      }
+    ]
   }
 ]
