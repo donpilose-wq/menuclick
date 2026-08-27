@@ -434,7 +434,7 @@
   {
     "nome": "Pollo al Spiedo",
     "descricao": "Solo 25000\nCon guarnición 30000",
-    "preco": "26000",
+    "preco": "30000",
     "imagem": "img/espi.jpg",
     "categoria": "Por Kilo",
     "id": "prod0055"
@@ -442,7 +442,7 @@
   {
     "nome": "Bondiola",
     "descricao": "Precio Por kilo",
-    "preco": "52000",
+    "preco": "58000",
     "imagem": "img/bondiola.jpeg",
     "categoria": "Por Kilo",
     "id": "prod0056"
@@ -450,7 +450,7 @@
   {
     "nome": "Pollo entero con guarnición",
     "descricao": "Con guarnición a elección para 4 personas",
-    "preco": "32000",
+    "preco": "37000",
     "imagem": "img/pentero.jpg",
     "categoria": "Por Kilo",
     "id": "prod0057"
@@ -458,7 +458,7 @@
   {
     "nome": "mila berenjena",
     "descricao": "por unidad ",
-    "preco": "2000",
+    "preco": "3000",
     "imagem": "img/milberen.jpg",
     "categoria": "Por Unidad",
     "id": "prod0058"
@@ -466,7 +466,7 @@
   {
     "nome": "matambre enrollado ",
     "descricao": "matambre enrollado ",
-    "preco": "46000",
+    "preco": "58000",
     "imagem": "img/mataporuno.jpg",
     "categoria": "Por Kilo",
     "id": "prod0059"
