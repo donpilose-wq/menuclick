@@ -65,7 +65,7 @@
   },
   {
     "nombre": "Matambre con guarnición",
-    "descripcion": "Matambre tierno con guarnición",
+    "descripcion": "Matambre tierno con guarnición o\nMatambre enrollado con guarnición ",
     "precio": "18000",
     "imagen": "img/mataguar.jpg",
     "categoria": "Porción 🍽️",
@@ -464,8 +464,8 @@
     "id": "prod0058"
   },
   {
-    "nombre": "Matambre enrollado ",
-    "descripcion": "matambre enrollado ",
+    "nombre": "Matambre enrollado",
+    "descripcion": "matambre enrollado",
     "precio": "58000",
     "imagen": "img/mataporuno.jpg",
     "categoria": "Por Kilo",
